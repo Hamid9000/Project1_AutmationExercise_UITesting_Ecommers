@@ -1,0 +1,14 @@
+2026-09-24 00:47:27 INFO  com.automationExercise.test.smoke.LoginTest - Starting TC-002: Invalid Login Test
+2026-09-24 00:47:27 INFO  com.automationExercise.test.smoke.LoginTest - Opening Login Page
+2026-09-24 00:47:30 INFO  com.automationExercise.test.smoke.LoginTest - Entering invalid login credentials
+2026-09-24 00:47:31 INFO  com.automationExercise.test.smoke.LoginTest - Verifying invalid login error message
+2026-09-24 00:47:34 INFO  com.automationExercise.test.smoke.LoginTest - TC-002 passed successfully
+2026-09-24 00:47:36 INFO  com.automationExercise.test.smoke.LoginTest - Starting TC-001: Valid Login Test
+2026-09-24 00:47:36 INFO  com.automationExercise.test.smoke.LoginTest - Opening Login Page
+2026-09-24 00:47:39 INFO  com.automationExercise.test.smoke.LoginTest - Entering valid login credentials
+2026-09-24 00:47:42 INFO  com.automationExercise.test.smoke.LoginTest - Verifying successful login
+2026-09-24 00:48:59 INFO  com.automationExercise.test.smoke.LoginTest - Starting TC-002: Invalid Login Test
+2026-09-24 00:48:59 INFO  com.automationExercise.test.smoke.LoginTest - Opening Login Page
+2026-09-24 00:49:02 INFO  com.automationExercise.test.smoke.LoginTest - Entering invalid login credentials
+2026-09-24 00:49:06 INFO  com.automationExercise.test.smoke.LoginTest - Verifying invalid login error message
+2026-09-24 00:49:06 INFO  com.automationExercise.test.smoke.LoginTest - TC-002 passed successfully

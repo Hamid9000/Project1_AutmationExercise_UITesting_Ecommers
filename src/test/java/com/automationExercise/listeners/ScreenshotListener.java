@@ -1,5 +1,6 @@
 package com.automationExercise.listeners;
 
+import com.automationExercise.driver.DriverManager;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

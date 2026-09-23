@@ -1,4 +1,4 @@
-package com.automationexercise.driver;
+package com.automationExercise.driver;
 
 import com.automationExercise.config.ConfigLoader;
 import org.openqa.selenium.WebDriver;

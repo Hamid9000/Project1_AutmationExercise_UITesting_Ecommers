@@ -1,11 +1,14 @@
 package com.automationExercise.config;
-import java.io.InputStream;
+
+import com.automationExercise.utils.PropertiesReader;
+
 import java.util.Properties;
 
 public class ConfigLoader {
 
     private static final Properties properties = new Properties();
-    private static String env;
+
+    private static String environment;
 
     static {
         loadConfig();
@@ -13,57 +16,51 @@ public class ConfigLoader {
 
     private static void loadConfig() {
 
-        try {
+        // Load default.properties
+        Properties defaultProperties =
+                PropertiesReader.readProperties("default.properties");
 
-            // ===== STEP 1 : Load default.properties =====
-            Properties defaultProp = new Properties();
+        // Add default properties
+        properties.putAll(defaultProperties);
 
-            try (InputStream defaultFile =
-                         ConfigLoader.class.getClassLoader()
-                                 .getResourceAsStream("config/default.properties")) {
+        // Get environment from JVM argument
+        environment = System.getProperty("environment");
 
-                if (defaultFile == null) {
-                    throw new RuntimeException("default.properties not found inside resources/config");
-                }
-
-                defaultProp.load(defaultFile);
-            }
-
-            // ===== STEP 2 : Decide ENV (Jenkins override) =====
-            env = System.getProperty("env");
-
-            if (env == null || env.isEmpty()) {
-                env = defaultProp.getProperty("env");
-            }
-
-            System.out.println("====================================");
-            System.out.println("Running Tests On Environment: " + env);
-            System.out.println("====================================");
-
-            // ===== STEP 3 : Load ENV file =====
-            try (InputStream envFile =
-                         ConfigLoader.class.getClassLoader()
-                                 .getResourceAsStream("config/" + env + ".properties")) {
-
-                if (envFile == null) {
-                    throw new RuntimeException(env + ".properties NOT FOUND inside resources/config");
-                }
-
-                properties.load(envFile);
-            }
-
-        } catch (Exception e) {
-            throw new RuntimeException("FAILED TO LOAD CONFIGURATION FILES", e);
+        // If not provided, take environment from default.properties
+        if (environment == null || environment.isEmpty()) {
+            environment = defaultProperties.getProperty("environment");
         }
+
+        if (environment == null || environment.isEmpty()) {
+            throw new RuntimeException(
+                    "environment not found in default.properties"
+            );
+        }
+
+        System.out.println("====================================");
+        System.out.println(
+                "Running Tests On Environment: " + environment
+        );
+        System.out.println("====================================");
+
+        // Load environment-specific properties
+        Properties environmentProperties =
+                PropertiesReader.readProperties(
+                        environment + ".properties"
+                );
+
+        // Environment properties override default properties
+        properties.putAll(environmentProperties);
     }
 
-    // ===== Get property =====
     public static String get(String key) {
 
         String value = properties.getProperty(key);
 
         if (value == null) {
-            throw new RuntimeException("Key NOT FOUND in " + env + ".properties : " + key);
+            throw new RuntimeException(
+                    "Key NOT FOUND in configuration: " + key
+            );
         }
 
         return value.trim();

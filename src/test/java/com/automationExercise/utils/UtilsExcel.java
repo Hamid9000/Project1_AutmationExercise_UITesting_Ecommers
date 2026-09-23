@@ -1,5 +1,6 @@
 package com.automationExercise.utils;
 
+import com.automationExercise.config.ConfigLoader;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -10,8 +11,9 @@ import java.io.IOException;
 
 public class UtilsExcel {
 
-    public static final String SHEET_PATH = System.getProperty("user.dir") + "/" + PropertiesReader.readKeys("excel_path");
-
+    public static final String SHEET_PATH =
+            System.getProperty("user.dir") + "/" +
+                    ConfigLoader.get("excel_path");
     // Generic method to read Excel data from given sheet
     public static Object[][] getTestDataFromExcel(String sheetName) {
         try (FileInputStream file = new FileInputStream(SHEET_PATH);
