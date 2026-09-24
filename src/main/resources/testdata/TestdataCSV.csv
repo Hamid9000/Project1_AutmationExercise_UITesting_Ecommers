@@ -1,0 +1,3 @@
+TestCaseID,TestType,Title,Name,Email,Password,DOB_Day,DOB_Month,DOB_Year,Newsletter,SpecialOffers,FirstName,LastName,Company,Address,Address2,Country,State,City,Zipcode,Mobile
+TC_SIGNUP_001,Positive,Mr.,Quinn Cochran,quinn.valid0fd01@gmail.com,Test@123,23,October,1988,No,Yes,Faith,Roth,Harmon and Hull Inc,Voluptatum repellend,Wall Ray Traders,Australia,Victoria,Melbourne,58151,9876543210
+TC_SIGNUP_002,Positive,Mrs.,Sarah Johnson,sarah.valid0dfd02@gmail.com,Test@456,15,May,1992,Yes,No,Sarah,Johnson,Johnson Pvt Ltd,12 Main Street,Apartment 4B,India,Maharashtra,Pune,411014,9876543211

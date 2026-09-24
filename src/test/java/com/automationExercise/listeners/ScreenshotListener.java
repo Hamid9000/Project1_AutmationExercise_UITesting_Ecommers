@@ -19,69 +19,103 @@ public class ScreenshotListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        // System.out.println("Inside onTestFailure");
+
+        // Screenshot only after all retries are exhausted
+        if (!RetryAnalyzer.isFinalFailure()) {
+            return;
+        }
+
         WebDriver driver = DriverManager.getDriver();
-        if (driver != null) {
-            try {
-                attachScreenshot(driver);
-                saveScreenshotToFolder(driver, "Failure_" + result.getMethod().getMethodName());
-                System.out.println("✅ Screenshot captured for FAILED test: " + result.getMethod().getMethodName());
-            } catch (Exception e) {
-                System.err.println("❌ Failed to capture failure screenshot: " + e.getMessage());
-            }
-        } else {
-            System.err.println("⚠️ WebDriver is null on failure.");
+
+        if (driver == null) {
+            System.err.println(
+                    "WebDriver is null. Screenshot could not be captured for: "
+                            + result.getMethod().getMethodName()
+            );
+
+            RetryAnalyzer.clearFinalFailure();
+            return;
+        }
+
+        String testName =
+                result.getMethod().getMethodName();
+
+        try {
+
+            attachScreenshot(driver);
+
+            saveScreenshotToFolder(
+                    driver,
+                    "Failure_" + testName
+            );
+
+            System.out.println(
+                    "Final failure screenshot captured for: "
+                            + testName
+            );
+
+        } catch (Exception e) {
+
+            System.err.println(
+                    "Failed to capture failure screenshot: "
+                            + e.getMessage()
+            );
+
+        } finally {
+
+            RetryAnalyzer.clearFinalFailure();
         }
     }
 
-//    @Override
-//    public void onTestSuccess(ITestResult result) {
-//        WebDriver driver = DriverManager_For_Jenkins.getDriver();
-//        if (driver != null) {
-//            try {
-//                attachScreenshot(driver);
-//                saveScreenshotToFolder(driver, "Success_" + result.getMethod().getMethodName());
-//                System.out.println("✅ Screenshot captured for PASSED test: " + result.getMethod().getMethodName());
-//            } catch (Exception e) {
-//                System.err.println("❌ Failed to capture success screenshot: " + e.getMessage());
-//            }
-//        }
-//    }
-
-//    @Override
-//    public void onTestSkipped(ITestResult result) {
-//        WebDriver driver = DriverManager_For_Jenkins.getDriver();
-//        if (driver != null) {
-//            try {
-//                attachScreenshot(driver);
-//                saveScreenshotToFolder(driver, "Skipped_" + result.getMethod().getMethodName());
-//                System.out.println("⚠️ Screenshot captured for SKIPPED test: " + result.getMethod().getMethodName());
-//            } catch (Exception e) {
-//                System.err.println("❌ Failed to capture skipped screenshot: " + e.getMessage());
-//            }
-//        }
-//    }
-
-    @Attachment(value = "Screenshot", type = "image/png")
+    @Attachment(
+            value = "Final Failure Screenshot",
+            type = "image/png"
+    )
     public static byte[] attachScreenshot(WebDriver driver) {
-        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
+        return ((TakesScreenshot) driver)
+                .getScreenshotAs(OutputType.BYTES);
     }
 
-    public void saveScreenshotToFolder(WebDriver driver, String label) {
+    private void saveScreenshotToFolder(
+            WebDriver driver,
+            String label) {
 
-        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String folderPath = "screenshots";
-        String fileName = folderPath + "/" + label + "_" + timestamp + ".png";
+        File source =
+                ((TakesScreenshot) driver)
+                        .getScreenshotAs(OutputType.FILE);
+
+        String timestamp =
+                new SimpleDateFormat("yyyyMMdd_HHmmss")
+                        .format(new Date());
+
+        File screenshotFolder =
+                new File("screenshots");
+
+        File destination =
+                new File(
+                        screenshotFolder,
+                        label + "_" + timestamp + ".png"
+                );
 
         try {
-            File dest = new File(fileName);
-            //   System.out.println("Saving Screenshot : " + dest.getAbsolutePath());
 
-            dest.getParentFile().mkdirs();
-            Files.copy(src.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
+            if (!screenshotFolder.exists()) {
+                screenshotFolder.mkdirs();
+            }
+
+            Files.copy(
+                    source.toPath(),
+                    destination.toPath(),
+                    StandardCopyOption.REPLACE_EXISTING
+            );
+
         } catch (IOException e) {
-            System.err.println("❌ Failed to save screenshot to folder: " + e.getMessage());
+
+            System.err.println(
+                    "Failed to save screenshot: "
+                            + e.getMessage()
+            );
         }
     }
 }

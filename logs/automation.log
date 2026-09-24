@@ -12,3 +12,481 @@
 2026-09-24 00:49:02 INFO  com.automationExercise.test.smoke.LoginTest - Entering invalid login credentials
 2026-09-24 00:49:06 INFO  com.automationExercise.test.smoke.LoginTest - Verifying invalid login error message
 2026-09-24 00:49:06 INFO  com.automationExercise.test.smoke.LoginTest - TC-002 passed successfully
+2026-09-24 15:02:39 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 15:02:43 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 15:02:43 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 15:02:43 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:02:51 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 15:02:51 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 15:02:53 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 15:02:53 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 15:02:53 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:02:57 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 15:02:57 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 15:15:34 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\smoke.xml
+
+2026-09-24 15:15:37 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 15:15:37 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 15:15:37 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:15:43 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 15:15:43 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 15:15:44 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 15:15:44 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 15:15:44 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:15:51 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 15:15:51 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 15:22:24 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 15:22:27 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 15:22:27 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 15:22:27 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:22:33 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 15:22:33 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 15:22:39 INFO  com.automationExercise.test.smoke.SignupTest - Account information submitted successfully
+2026-09-24 15:22:39 INFO  com.automationExercise.test.smoke.SignupTest - Verifying Account Created message
+2026-09-24 15:22:39 INFO  com.automationExercise.test.smoke.SignupTest - Test Case TC_SIGNUP_001 passed successfully
+2026-09-24 15:22:40 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 15:22:40 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 15:22:40 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:22:47 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 15:22:47 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 15:22:54 INFO  com.automationExercise.test.smoke.SignupTest - Account information submitted successfully
+2026-09-24 15:22:54 INFO  com.automationExercise.test.smoke.SignupTest - Verifying Account Created message
+2026-09-24 15:22:54 INFO  com.automationExercise.test.smoke.SignupTest - Test Case TC_SIGNUP_001 passed successfully
+2026-09-24 15:27:16 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 15:27:19 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 15:27:19 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 15:27:19 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:27:25 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 15:27:25 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 15:27:36 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 15:27:36 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 15:27:36 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:27:44 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 15:27:44 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 15:33:53 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 15:33:55 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 15:33:55 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 15:33:55 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:34:00 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 15:34:00 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 15:34:00 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:44:18 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 15:44:21 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_003
+2026-09-24 15:44:21 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Negative
+2026-09-24 15:44:21 INFO  com.automationExercise.test.smoke.SignupTest - Starting invalid signup test for user: Quinn Cochran
+2026-09-24 15:44:21 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:44:26 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_004
+2026-09-24 15:44:26 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Negative
+2026-09-24 15:44:26 INFO  com.automationExercise.test.smoke.SignupTest - Starting invalid signup test for user: Quinn Cochran
+2026-09-24 15:44:26 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:44:30 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_005
+2026-09-24 15:44:30 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Negative
+2026-09-24 15:44:30 INFO  com.automationExercise.test.smoke.SignupTest - Starting invalid signup test for user: Sarah Johnson
+2026-09-24 15:44:30 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:44:34 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_006
+2026-09-24 15:44:34 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Negative
+2026-09-24 15:44:34 INFO  com.automationExercise.test.smoke.SignupTest - Starting invalid signup test for user: David Brown
+2026-09-24 15:44:34 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:44:38 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 15:44:38 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 15:44:38 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 15:44:38 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:44:43 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 15:44:43 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 15:44:43 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 15:44:43 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:44:47 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: 
+2026-09-24 15:44:47 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: 
+2026-09-24 15:44:47 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: 
+2026-09-24 15:44:47 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 15:44:50 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: 
+2026-09-24 15:44:50 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: 
+2026-09-24 15:44:50 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: 
+2026-09-24 15:44:50 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:04:27 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\smoke.xml
+
+2026-09-24 16:04:29 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 16:04:29 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 16:04:29 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 16:04:29 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:04:36 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:04:36 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 16:04:48 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 16:04:48 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 16:04:48 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 16:04:48 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:04:55 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:04:55 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 16:05:06 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: 
+2026-09-24 16:05:06 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: 
+2026-09-24 16:05:06 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: 
+2026-09-24 16:05:06 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:05:10 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:05:10 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: 
+2026-09-24 16:05:21 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: 
+2026-09-24 16:05:21 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: 
+2026-09-24 16:05:21 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: 
+2026-09-24 16:05:21 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:05:26 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:05:26 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: 
+2026-09-24 16:07:10 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 16:15:17 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 16:16:15 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 16:16:18 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 16:16:18 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 16:16:18 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 16:16:18 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:16:25 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:16:25 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 16:16:36 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 16:16:36 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 16:16:36 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 16:16:36 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:16:43 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:16:43 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 16:16:54 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: 
+2026-09-24 16:16:54 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: 
+2026-09-24 16:16:54 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: 
+2026-09-24 16:16:54 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:16:58 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:16:58 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: 
+2026-09-24 16:17:09 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: 
+2026-09-24 16:17:09 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: 
+2026-09-24 16:17:09 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: 
+2026-09-24 16:17:09 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:17:13 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:17:13 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: 
+2026-09-24 16:21:05 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 16:32:46 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 16:32:49 INFO  com.automationExercise.test.smoke.SignupTest - Starting email validation test for user: 
+2026-09-24 16:32:49 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:32:52 INFO  com.automationExercise.test.smoke.SignupTest - Entering signup details
+2026-09-24 16:32:52 INFO  com.automationExercise.test.smoke.SignupTest - Submitting signup form
+2026-09-24 16:32:52 INFO  com.automationExercise.test.smoke.SignupTest - Verifying email validation message
+2026-09-24 16:33:09 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 16:36:15 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 16:36:18 INFO  com.automationExercise.test.smoke.SignupTest - Starting email validation test for user: 
+2026-09-24 16:36:18 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:36:21 INFO  com.automationExercise.test.smoke.SignupTest - Entering signup details
+2026-09-24 16:36:21 INFO  com.automationExercise.test.smoke.SignupTest - Submitting signup form
+2026-09-24 16:36:21 INFO  com.automationExercise.test.smoke.SignupTest - Verifying email validation message
+2026-09-24 16:36:23 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_003
+2026-09-24 16:36:23 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Negative
+2026-09-24 16:36:23 INFO  com.automationExercise.test.smoke.SignupTest - Starting invalid signup test for user: Quinn Cochran
+2026-09-24 16:36:23 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:36:27 INFO  com.automationExercise.test.smoke.SignupTest - Entering signup details
+2026-09-24 16:36:27 INFO  com.automationExercise.test.smoke.SignupTest - Submitting signup form
+2026-09-24 16:36:27 INFO  com.automationExercise.test.smoke.SignupTest - Verifying existing email error message
+2026-09-24 16:36:39 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_004
+2026-09-24 16:36:39 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Negative
+2026-09-24 16:36:39 INFO  com.automationExercise.test.smoke.SignupTest - Starting invalid signup test for user: Quinn Cochran
+2026-09-24 16:36:39 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:36:44 INFO  com.automationExercise.test.smoke.SignupTest - Entering signup details
+2026-09-24 16:36:44 INFO  com.automationExercise.test.smoke.SignupTest - Submitting signup form
+2026-09-24 16:36:48 INFO  com.automationExercise.test.smoke.SignupTest - Verifying existing email error message
+2026-09-24 16:37:00 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: 
+2026-09-24 16:37:00 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: 
+2026-09-24 16:37:00 INFO  com.automationExercise.test.smoke.SignupTest - Starting invalid signup test for user: 
+2026-09-24 16:37:00 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:37:05 INFO  com.automationExercise.test.smoke.SignupTest - Entering signup details
+2026-09-24 16:37:05 INFO  com.automationExercise.test.smoke.SignupTest - Submitting signup form
+2026-09-24 16:37:05 INFO  com.automationExercise.test.smoke.SignupTest - Verifying existing email error message
+2026-09-24 16:37:16 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: 
+2026-09-24 16:37:16 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: 
+2026-09-24 16:37:16 INFO  com.automationExercise.test.smoke.SignupTest - Starting invalid signup test for user: 
+2026-09-24 16:37:16 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:37:20 INFO  com.automationExercise.test.smoke.SignupTest - Entering signup details
+2026-09-24 16:37:20 INFO  com.automationExercise.test.smoke.SignupTest - Submitting signup form
+2026-09-24 16:37:20 INFO  com.automationExercise.test.smoke.SignupTest - Verifying existing email error message
+2026-09-24 16:37:32 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 16:37:32 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 16:37:32 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 16:37:32 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:37:39 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:37:39 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 16:37:50 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 16:37:50 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 16:37:50 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 16:37:50 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:37:57 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:37:57 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 16:38:08 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: 
+2026-09-24 16:38:08 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: 
+2026-09-24 16:38:08 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: 
+2026-09-24 16:38:08 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:38:12 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:38:12 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: 
+2026-09-24 16:38:23 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: 
+2026-09-24 16:38:23 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: 
+2026-09-24 16:38:23 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: 
+2026-09-24 16:38:23 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 16:38:27 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 16:38:27 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: 
+2026-09-24 18:50:34 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 18:50:38 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 18:50:38 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 18:50:38 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 18:50:38 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 18:50:43 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 18:50:43 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 18:50:56 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 18:50:56 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 18:50:56 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 18:50:56 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 18:51:02 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 18:51:02 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 18:51:43 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 18:51:45 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 18:51:45 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 18:51:45 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 18:51:45 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 18:51:52 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 18:51:52 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 18:51:54 INFO  com.automationExercise.test.smoke.SignupTest - Account information filled successfully
+2026-09-24 18:51:54 INFO  com.automationExercise.test.smoke.SignupTest - Creating account
+2026-09-24 18:51:58 INFO  com.automationExercise.test.smoke.SignupTest - Verifying Account Created message
+2026-09-24 18:51:58 INFO  com.automationExercise.test.smoke.SignupTest - Test Case TC_SIGNUP_001 passed successfully
+2026-09-24 18:51:59 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 18:51:59 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 18:51:59 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 18:51:59 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 18:52:08 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 18:52:08 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 18:52:10 INFO  com.automationExercise.test.smoke.SignupTest - Account information filled successfully
+2026-09-24 18:52:10 INFO  com.automationExercise.test.smoke.SignupTest - Creating account
+2026-09-24 18:52:13 INFO  com.automationExercise.test.smoke.SignupTest - Verifying Account Created message
+2026-09-24 18:52:13 INFO  com.automationExercise.test.smoke.SignupTest - Test Case TC_SIGNUP_002 passed successfully
+2026-09-24 19:07:15 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 19:07:18 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:07:18 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:07:18 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:07:18 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:07:23 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:07:23 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:07:35 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:07:35 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:07:35 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:07:35 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:07:41 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:07:41 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:07:53 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:07:53 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:07:53 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:07:53 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:08:00 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:08:00 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:08:11 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:08:11 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:08:11 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:08:11 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:08:17 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:08:17 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:17:44 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:17:44 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:17:44 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:17:44 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:17:51 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:17:51 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:18:02 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:18:02 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:18:02 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:18:02 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:18:09 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:18:09 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:19:32 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:19:32 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:19:32 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:19:32 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:19:39 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:19:39 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:19:50 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:19:50 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:19:50 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:19:50 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:19:57 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:19:57 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:20:08 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:20:08 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:20:08 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:20:08 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:20:13 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:20:13 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:20:24 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:20:24 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:20:24 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:20:24 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:20:32 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:20:32 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:20:43 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:20:43 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:20:43 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:20:43 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:20:50 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:20:50 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:21:02 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:21:02 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:21:02 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:21:02 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:21:08 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:21:08 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:26:20 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\smoke.xml
+
+2026-09-24 19:26:24 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\smoke.xml
+
+2026-09-24 19:26:27 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:26:27 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:26:27 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:26:27 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:26:29 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:26:29 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:26:29 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:26:29 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:26:35 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:26:35 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:26:36 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:26:36 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:26:47 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:26:47 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:26:47 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:26:47 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:26:49 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:26:49 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:26:49 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:26:49 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:26:55 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:26:55 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:26:58 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:26:58 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:27:08 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:27:08 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:27:08 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:27:08 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:27:10 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:27:10 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:27:10 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:27:10 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:27:14 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:27:14 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:27:17 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:27:17 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:27:26 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:27:26 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:27:26 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:27:26 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:27:28 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:27:28 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:27:28 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:27:28 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:27:32 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:27:32 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:27:34 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:27:34 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:27:43 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:27:43 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:27:43 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:27:43 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:27:45 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:27:45 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:27:45 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:27:45 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:27:49 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:27:49 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:27:51 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:27:51 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:28:00 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:28:00 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:28:00 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:28:00 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:28:03 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:28:03 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:28:03 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:28:03 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:28:06 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:28:06 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:28:09 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:28:09 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:37:25 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-24 19:37:27 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:37:27 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:37:27 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:37:27 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:37:35 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:37:35 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:37:46 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:37:46 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:37:46 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:37:46 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:37:51 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:37:51 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:38:02 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:38:02 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:38:02 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:38:02 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:38:05 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:38:05 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:38:16 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:38:16 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:38:16 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:38:16 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:38:24 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:38:24 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:45:25 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:45:25 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:45:25 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:45:25 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:45:29 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:45:29 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:45:40 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-09-24 19:45:41 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:45:41 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-09-24 19:45:41 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:45:46 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:45:46 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-09-24 19:45:58 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:45:58 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:45:58 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:45:58 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:46:05 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:46:05 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-24 19:46:16 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-09-24 19:46:16 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-09-24 19:46:16 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-09-24 19:46:16 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-09-24 19:46:22 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-09-24 19:46:22 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson

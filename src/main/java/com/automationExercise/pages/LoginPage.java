@@ -27,6 +27,9 @@ public class LoginPage extends CommonToAllPage {
     private By loginButton =
             By.cssSelector("[data-qa='login-button']");
 
+    private By loginErrorMessage =
+            By.xpath("//p[contains(text(),'Your email or password is incorrect!')]");
+
     // =========================
     // Constructor
     // =========================
@@ -68,5 +71,14 @@ public class LoginPage extends CommonToAllPage {
         enterLoginEmail(email);
         enterLoginPassword(password);
         clickLogin();
+    }
+
+    // =========================
+    // Login Verification
+    // =========================
+
+    public String getLoginErrorMessage() {
+
+        return getText(loginErrorMessage);
     }
 }

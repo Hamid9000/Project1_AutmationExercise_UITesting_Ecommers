@@ -40,7 +40,12 @@ public class DriverManager {
             case "chrome":
 
                 ChromeOptions chromeOptions = new ChromeOptions();
+
+                // Existing configuration
                 chromeOptions.addArguments("--start-maximized");
+
+                // Disable browser notification permission popup
+                chromeOptions.addArguments("--disable-notifications");
 
                 if ("true".equalsIgnoreCase(headless)) {
                     chromeOptions.addArguments("--headless=new");
@@ -54,7 +59,12 @@ public class DriverManager {
             case "edge":
 
                 EdgeOptions edgeOptions = new EdgeOptions();
+
+                // Existing configuration
                 edgeOptions.addArguments("--start-maximized");
+
+                // Disable browser notification permission popup
+                edgeOptions.addArguments("--disable-notifications");
 
                 if ("true".equalsIgnoreCase(headless)) {
                     edgeOptions.addArguments("--headless=new");
@@ -69,6 +79,12 @@ public class DriverManager {
 
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
 
+                // Disable browser notifications
+                firefoxOptions.addPreference(
+                        "dom.webnotifications.enabled",
+                        false
+                );
+
                 if ("true".equalsIgnoreCase(headless)) {
                     firefoxOptions.addArguments("--headless");
                     firefoxOptions.addArguments("--width=1920");
@@ -79,7 +95,9 @@ public class DriverManager {
                 break;
 
             default:
-                throw new RuntimeException("Invalid browser: " + browser);
+                throw new RuntimeException(
+                        "Invalid browser: " + browser
+                );
         }
 
         driver.set(webDriver);

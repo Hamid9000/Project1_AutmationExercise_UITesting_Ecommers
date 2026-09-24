@@ -1,76 +1,63 @@
 package com.automationExercise.test.smoke;
 
 import com.automationExercise.base.CommonToAllTest;
+import com.automationExercise.dataprovider.LoginDataProvider;
 import com.automationExercise.driver.DriverManager;
 import com.automationExercise.pages.LoginPage;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginTest extends CommonToAllTest {
 
-    private static final Logger logger =
-            LogManager.getLogger(LoginTest.class);
-
     @Test(
-            description = "TC-001: Verify user is able to login with valid credentials",
-            groups = {"smoke"}
+            description = "Verify login functionality with valid credentials",
+            groups = {"smoke"},
+            dataProvider = "validData",
+            dataProviderClass = LoginDataProvider.class
     )
-    public void validLoginTest() {
-
-        logger.info("Starting TC-001: Valid Login Test");
+    public void validLoginTest(String email, String password) {
 
         LoginPage loginPage =
                 new LoginPage(DriverManager.getDriver());
 
-        logger.info("Opening Login Page");
         loginPage.openLoginPage();
 
-        logger.info("Entering valid login credentials");
-        loginPage.login(
-                "validemail@gmail.com",
-                "validPassword"
+        loginPage.login(email, password);
+
+        Assert.assertFalse(
+                DriverManager.getDriver()
+                        .getCurrentUrl()
+                        .contains("login"),
+                "User should be logged in successfully"
         );
-
-        logger.info("Verifying successful login");
-
-        Assert.assertTrue(
-                DriverManager.getDriver().getCurrentUrl().contains("/account"),
-                "User is not logged in successfully"
-        );
-
-        logger.info("TC-001 passed successfully");
     }
 
-    @Test(
-            description = "TC-002: Verify user is not able to login with invalid credentials",
-            groups = {"smoke"}
-    )
-    public void invalidLoginTest() {
 
-        logger.info("Starting TC-002: Invalid Login Test");
+    @Test(
+            description = "Verify login functionality with invalid credentials",
+            groups = {"smoke"},
+            dataProvider = "inValidData",
+            dataProviderClass = LoginDataProvider.class
+    )
+    public void invalidLoginTest(
+            String email,
+            String password,
+            String expectedErrorMessage) {
 
         LoginPage loginPage =
                 new LoginPage(DriverManager.getDriver());
 
-        logger.info("Opening Login Page");
         loginPage.openLoginPage();
 
-        logger.info("Entering invalid login credentials");
-        loginPage.login(
-                "invalidefdmail@gmail.com",
-                "wrofngPassword"
+        loginPage.login(email, password);
+
+        String actualErrorMessage =
+                loginPage.getLoginErrorMessage();
+
+        Assert.assertEquals(
+                actualErrorMessage,
+                expectedErrorMessage,
+                "Login error message is not matching"
         );
-
-        logger.info("Verifying invalid login error message");
-
-        Assert.assertTrue(
-                DriverManager.getDriver().getPageSource()
-                        .contains("Your email or password is incorrect!"),
-                "Invalid login error message is not displayed"
-        );
-
-        logger.info("TC-002 passed successfully");
     }
 }
