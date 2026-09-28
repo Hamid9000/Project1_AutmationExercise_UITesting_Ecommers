@@ -2,6 +2,7 @@ package com.automationExercise.base;
 
 import com.automationExercise.config.ConfigLoader;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -75,7 +76,13 @@ public class CommonToAllPage {
         return new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
-
+    public  void waitFor(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000L);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+    }
     // =========================
     // Common Actions
     // =========================
@@ -92,7 +99,12 @@ public class CommonToAllPage {
 
         waitForClickable(locator).click();
     }
+    protected void jsClick(By locator) {
+        WebElement element = waitForElement(locator);
 
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", element);
+    }
     protected String getText(By locator) {
 
         return waitForElement(locator).getText();

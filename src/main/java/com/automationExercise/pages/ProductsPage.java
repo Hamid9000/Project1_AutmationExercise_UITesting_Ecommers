@@ -29,7 +29,7 @@ public class ProductsPage extends CommonToAllPage {
     // Products
     // =========================
 
-    private By allProducts = By.id("features_items");
+    private By allProducts = By.className("features_items");
 
     private By searchedProductsTitle =
             By.xpath("//h2[contains(text(),'Searched Products')]");

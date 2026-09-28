@@ -541,3 +541,121 @@
 2026-09-28 14:52:25 INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
 
+2026-09-28 17:29:17 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 17:37:41 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 17:38:41 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 17:40:10 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 17:40:36 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 17:50:15 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 17:50:17 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 17:50:17 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 17:50:19 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:10:12 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:10:14 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 18:10:14 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:10:18 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:10:52 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Searched Products section
+2026-09-28 18:10:52 INFO  com.automationExercise.test.smoke.ProductTest - Test passed: TC_PROD_002
+2026-09-28 18:13:01 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:13:03 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 18:13:03 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:13:06 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:13:19 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Searched Products section
+2026-09-28 18:13:19 INFO  com.automationExercise.test.smoke.ProductTest - Test passed: TC_PROD_002
+2026-09-28 18:13:41 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:13:49 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:13:51 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 18:13:51 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:13:56 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:14:36 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:14:38 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 18:14:38 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:14:41 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:15:00 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:15:02 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 18:15:02 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:15:06 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:16:26 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:16:28 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 18:16:28 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:16:31 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:16:45 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Searched Products section
+2026-09-28 18:16:45 INFO  com.automationExercise.test.smoke.ProductTest - Test passed: TC_PROD_002
+2026-09-28 18:17:05 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:17:07 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 18:17:07 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:17:11 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:17:24 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Searched Products section
+2026-09-28 18:17:24 INFO  com.automationExercise.test.smoke.ProductTest - Test passed: TC_PROD_002
+2026-09-28 18:19:55 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:19:58 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 18:19:58 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:20:02 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:29:44 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:29:48 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 18:29:48 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:29:51 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:32:44 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:32:47 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 18:32:47 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:32:51 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:33:05 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Searched Products section
+2026-09-28 18:33:05 INFO  com.automationExercise.test.smoke.ProductTest - Test passed: TC_PROD_002
+2026-09-28 18:33:46 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-09-28 18:33:48 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_005 - Verify brand
+2026-09-28 18:33:48 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:33:49 INFO  com.automationExercise.test.smoke.ProductTest - Selecting brand: POLO
+2026-09-28 18:33:56 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_003 - Verify category
+2026-09-28 18:33:56 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:34:08 INFO  com.automationExercise.test.smoke.ProductTest - Selecting category: Women
+2026-09-28 18:34:08 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Women category
+2026-09-28 18:34:08 INFO  com.automationExercise.test.smoke.ProductTest - Test passed: TC_PROD_003
+2026-09-28 18:34:09 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-09-28 18:34:09 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:34:13 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-09-28 18:34:15 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_001 - Verify Products page is displayed
+2026-09-28 18:34:15 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:34:18 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Products page is displayed
+2026-09-28 18:34:18 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Products URL
+2026-09-28 18:34:18 INFO  com.automationExercise.test.smoke.ProductTest - Test passed: TC_PROD_001
+2026-09-28 18:34:19 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_004 - Verify sub-category
+2026-09-28 18:34:19 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-09-28 18:34:21 INFO  com.automationExercise.test.smoke.ProductTest - Selecting category: Women
+2026-09-28 18:34:21 INFO  com.automationExercise.test.smoke.ProductTest - Selecting sub-category: Tops
+2026-09-28 18:34:45 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Women - Tops sub-category
