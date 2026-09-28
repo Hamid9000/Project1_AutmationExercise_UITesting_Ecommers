@@ -31,6 +31,30 @@ public class CommonToAllPage {
     }
 
     // =========================
+    // Navigation
+    // =========================
+
+    protected void navigateBack() {
+        driver.navigate().back();
+    }
+
+    protected void navigateForward() {
+        driver.navigate().forward();
+    }
+
+    protected void refreshPage() {
+        driver.navigate().refresh();
+    }
+
+    protected String getCurrentUrl() {
+        return driver.getCurrentUrl();
+    }
+
+    protected String getPageTitle() {
+        return driver.getTitle();
+    }
+
+    // =========================
     // Explicit Wait
     // =========================
 
@@ -46,11 +70,17 @@ public class CommonToAllPage {
                 .until(ExpectedConditions.elementToBeClickable(locator));
     }
 
+    protected boolean waitForElementToDisappear(By locator) {
+
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    }
+
     // =========================
     // Common Actions
     // =========================
 
-    protected void enterInput(By locator, String value) {
+    protected void enter(By locator, String value) {
 
         WebElement element = waitForElement(locator);
 
@@ -58,7 +88,7 @@ public class CommonToAllPage {
         element.sendKeys(value);
     }
 
-    protected void clickElement(By locator) {
+    protected void click(By locator) {
 
         waitForClickable(locator).click();
     }
@@ -68,8 +98,27 @@ public class CommonToAllPage {
         return waitForElement(locator).getText();
     }
 
+    // =========================
+    // Common Verification
+    // =========================
+
     protected boolean isDisplayed(By locator) {
 
         return waitForElement(locator).isDisplayed();
+    }
+
+    protected boolean isElementPresent(By locator) {
+
+        return !driver.findElements(locator).isEmpty();
+    }
+
+    protected boolean isUrlContains(String expectedValue) {
+
+        return getCurrentUrl().contains(expectedValue);
+    }
+
+    protected boolean isTitleContains(String expectedValue) {
+
+        return getPageTitle().contains(expectedValue);
     }
 }

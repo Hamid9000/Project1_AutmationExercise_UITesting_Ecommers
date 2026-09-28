@@ -60,7 +60,7 @@ public class SignupPage extends CommonToAllPage {
     }
 
     public AccountInformationPage navigateToAccountInformation() {
-        clickElement(signupButton);
+        click(signupButton);
         return new AccountInformationPage(driver);
     }
 
@@ -70,16 +70,16 @@ public class SignupPage extends CommonToAllPage {
     // =========================
 
     public void enterSignupName(String name) {
-        enterInput(signupName, name);
+        enter(signupName, name);
     }
 
     public void enterSignupEmail(String email) {
-        enterInput(signupEmail, email);
+        enter(signupEmail, email);
     }
 
     // Click Signup button
     public void clickSignupButton() {
-        clickElement(signupButton);
+        click(signupButton);
     }
 
 

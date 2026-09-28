@@ -44,6 +44,6 @@ public class AccountCreatedPage extends CommonToAllPage {
     // =========================
 
     public void clickContinue() {
-        clickElement(continueButton);
+        click(continueButton);
     }
 }

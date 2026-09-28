@@ -114,11 +114,11 @@ public class AccountInformationPage extends CommonToAllPage {
     // =========================
 
     public void selectMr() {
-        clickElement(mrRadioButton);
+        click(mrRadioButton);
     }
 
     public void selectMrs() {
-        clickElement(mrsRadioButton);
+        click(mrsRadioButton);
     }
 
 
@@ -127,15 +127,15 @@ public class AccountInformationPage extends CommonToAllPage {
     // =========================
 
     public void enterName(String value) {
-        enterInput(name, value);
+        enter(name, value);
     }
 
     public void enterEmail(String value) {
-        enterInput(email, value);
+        enter(email, value);
     }
 
     public void enterPassword(String value) {
-        enterInput(password, value);
+        enter(password, value);
     }
 
 
@@ -165,13 +165,13 @@ public class AccountInformationPage extends CommonToAllPage {
 
     public void selectNewsletter() {
         if (!waitForElement(newsletter).isSelected()) {
-            clickElement(newsletter);
+            click(newsletter);
         }
     }
 
     public void selectSpecialOffers() {
         if (!waitForElement(specialOffers).isSelected()) {
-            clickElement(specialOffers);
+            click(specialOffers);
         }
     }
 
@@ -181,23 +181,23 @@ public class AccountInformationPage extends CommonToAllPage {
     // =========================
 
     public void enterFirstName(String value) {
-        enterInput(firstName, value);
+        enter(firstName, value);
     }
 
     public void enterLastName(String value) {
-        enterInput(lastName, value);
+        enter(lastName, value);
     }
 
     public void enterCompany(String value) {
-        enterInput(company, value);
+        enter(company, value);
     }
 
     public void enterAddress(String value) {
-        enterInput(address, value);
+        enter(address, value);
     }
 
     public void enterAddress2(String value) {
-        enterInput(address2, value);
+        enter(address2, value);
     }
 
     public void selectCountry(String value) {
@@ -206,19 +206,19 @@ public class AccountInformationPage extends CommonToAllPage {
     }
 
     public void enterState(String value) {
-        enterInput(state, value);
+        enter(state, value);
     }
 
     public void enterCity(String value) {
-        enterInput(city, value);
+        enter(city, value);
     }
 
     public void enterZipcode(String value) {
-        enterInput(zipcode, value);
+        enter(zipcode, value);
     }
 
     public void enterMobileNumber(String value) {
-        enterInput(mobileNumber, value);
+        enter(mobileNumber, value);
     }
 
 
@@ -383,7 +383,7 @@ public class AccountInformationPage extends CommonToAllPage {
     // =========================
 
     public AccountCreatedPage navigateToAccountCreated() {
-        clickElement(createAccountButton);
+        click(createAccountButton);
         return new AccountCreatedPage(driver);
     }
 }

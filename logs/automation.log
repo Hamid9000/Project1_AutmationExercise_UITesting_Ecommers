@@ -538,3 +538,6 @@
 2026-09-25 18:12:48 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
 2026-09-25 18:12:54 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
 2026-09-25 18:12:54 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-09-28 14:52:25 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+

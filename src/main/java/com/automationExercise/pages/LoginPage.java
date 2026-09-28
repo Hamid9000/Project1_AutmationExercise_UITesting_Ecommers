@@ -51,15 +51,15 @@ public class LoginPage extends CommonToAllPage {
     // =========================
 
     public void enterLoginEmail(String email) {
-        enterInput(loginEmail, email);
+        enter(loginEmail, email);
     }
 
     public void enterLoginPassword(String password) {
-        enterInput(loginPassword, password);
+        enter(loginPassword, password);
     }
 
     public void clickLogin() {
-        clickElement(loginButton);
+        click(loginButton);
     }
 
     // =========================
