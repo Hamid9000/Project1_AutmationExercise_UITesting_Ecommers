@@ -7,10 +7,13 @@ import com.automationExercise.listeners.RetryAnalyzer;
 import com.automationExercise.pages.AccountCreatedPage;
 import com.automationExercise.pages.AccountInformationPage;
 import com.automationExercise.pages.SignupPage;
-import com.automationExercise.testdata.SignupTestData;
+import com.automationExercise.utils.UserApi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class SignupTest extends CommonToAllTest {
@@ -29,7 +32,6 @@ public class SignupTest extends CommonToAllTest {
             description = "Verify that a new user can successfully create an account with valid details",
             groups = {"smoke"},
             retryAnalyzer = RetryAnalyzer.class
-
     )
     public void verifyValidSignup(
             String testCaseId,
@@ -53,6 +55,11 @@ public class SignupTest extends CommonToAllTest {
             String city,
             String zipcode,
             String mobile) {
+
+        // Store email and password for cleanup
+        ITestResult result = Reporter.getCurrentTestResult();
+        result.setAttribute("email", email);
+        result.setAttribute("password", password);
 
         logger.info("Test Case ID: {}", testCaseId);
         logger.info("Test Type: {}", testType);
@@ -110,4 +117,36 @@ public class SignupTest extends CommonToAllTest {
         );
     }
 
+
+    // ============================================================
+    // Test Data Cleanup
+    // ============================================================
+
+    @AfterMethod(alwaysRun = true)
+    public void cleanupTestData(ITestResult result) {
+
+        String email =
+                (String) result.getAttribute("email");
+
+        String password =
+                (String) result.getAttribute("password");
+
+        if (email != null && password != null) {
+
+            boolean deleted =
+                    UserApi.deleteUser(email, password);
+
+            if (deleted) {
+                logger.info(
+                        "Test data cleanup successful for: {}",
+                        email
+                );
+            } else {
+                logger.info(
+                        "No account deleted for: {}",
+                        email
+                );
+            }
+        }
+    }
 }
