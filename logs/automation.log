@@ -715,3 +715,24 @@
 2026-10-02 13:51:23 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
 2026-10-02 13:51:23 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
 2026-10-02 13:51:27 INFO  com.automationExercise.test.smoke.SignupTest - Test data cleanup successful for: sarah.valid0dfd02@gmail.com
+2026-10-13 16:46:34 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-13 16:46:38 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_005 - Verify brand
+2026-10-13 16:46:38 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-10-13 16:46:41 INFO  com.automationExercise.test.smoke.ProductTest - Selecting brand: POLO
+2026-10-13 16:46:52 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_003 - Verify category
+2026-10-13 16:46:52 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-10-13 16:46:56 INFO  com.automationExercise.test.smoke.ProductTest - Selecting category: Women
+2026-10-13 16:46:57 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Women category
+2026-10-13 16:46:57 INFO  com.automationExercise.test.smoke.ProductTest - Test passed: TC_PROD_003
+2026-10-13 16:46:58 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-10-13 16:46:58 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-10-13 16:47:01 INFO  com.automationExercise.test.smoke.ProductTest - Searching for product: Blue Top
+2026-10-13 16:47:15 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Searched Products section
+2026-10-13 16:47:26 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_001 - Verify Products page is displayed
+2026-10-13 16:47:26 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-10-13 16:47:28 INFO  com.automationExercise.test.smoke.ProductTest - Verifying Products page is displayed
+2026-10-13 16:47:39 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_004 - Verify sub-category
+2026-10-13 16:47:39 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
+2026-10-13 16:47:40 INFO  com.automationExercise.test.smoke.ProductTest - Selecting category: Women
