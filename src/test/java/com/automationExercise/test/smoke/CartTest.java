@@ -12,6 +12,11 @@ public class CartTest extends CommonToAllTest {
     public void verifyUserCanPlaceOrder() throws InterruptedException {
         String id = "fizejazud@mailinator.com";
         String password = "Pa$$w0rd!";
+        String name ="Hamid";
+        String cardNumber ="4111111111111111";
+        String cvc ="123";
+        String month="12";
+        String year ="2008";
 
         // Step 1: Open Products page
         ProductsPage productsPage = new ProductsPage(DriverManager.getDriver());
@@ -47,7 +52,7 @@ public class CartTest extends CommonToAllTest {
 
 
         // Step 11: Complete payment
-        OrderConfirmationPage orderConfirmationPage = paymentPage.completePayment("Hamid", "4111111111111111", "123", "12", "2028");
+        OrderConfirmationPage orderConfirmationPage = paymentPage.completePayment(name, cardNumber,cvc,month,year);
 
         // Step 12: Verify order confirmation
         Assert.assertTrue(paymentPage.isOrderPlacedMessageDisplayed(), "Order placed message is not displayed");
