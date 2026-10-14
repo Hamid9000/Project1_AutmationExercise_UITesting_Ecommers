@@ -2,7 +2,7 @@ package com.automationExercise.pages;
 
 import com.automationExercise.base.CommonToAllPage;
 import com.automationExercise.config.ConfigLoader;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +27,7 @@ public class CartPage extends CommonToAllPage {
 
     // Constructor
 
-    Public CartPage(WebDriver driver){
+    public CartPage(WebDriver driver){
         super(driver);
     }
 

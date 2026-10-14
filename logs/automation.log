@@ -736,3 +736,78 @@
 2026-10-13 16:47:39 INFO  com.automationExercise.test.smoke.ProductTest - Starting test: TC_PROD_004 - Verify sub-category
 2026-10-13 16:47:39 INFO  com.automationExercise.test.smoke.ProductTest - Opening Products page
 2026-10-13 16:47:40 INFO  com.automationExercise.test.smoke.ProductTest - Selecting category: Women
+2026-10-14 09:35:42 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 09:36:27 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 10:53:03 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 10:55:13 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 10:56:34 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 10:57:08 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:02:44 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:06:23 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:06:43 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:07:42 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:08:03 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:08:18 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:08:38 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:14:29 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:15:46 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:16:13 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:16:29 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:19:39 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:25:55 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:26:13 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:26:35 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 11:27:07 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 12:15:22 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 12:24:17 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-14 12:25:10 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+

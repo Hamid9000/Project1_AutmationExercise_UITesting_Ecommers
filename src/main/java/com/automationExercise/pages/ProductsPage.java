@@ -24,7 +24,7 @@ public class ProductsPage extends CommonToAllPage {
 
     private By searchButton = By.id("submit_search");
 
-
+    private By blueTop = By.xpath("//div[contains(@class,'features_items')]//div[contains(@class,'productinfo')][p[normalize-space()='Blue Top']]/a[contains(@class,'add-to-cart')]");
     // =========================
     // Products
     // =========================
@@ -34,6 +34,11 @@ public class ProductsPage extends CommonToAllPage {
     private By searchedProductsTitle =
             By.xpath("//h2[contains(text(),'Searched Products')]");
 
+    //=============================
+    // Modal cart
+    // ===========================
+    private By viewCart = By.xpath("//a[@href='/view_cart' ]/ u[text()='View Cart']");
+    private By continueShopping = By.xpath("//button[text()='Continue Shopping']");
 
     // =========================
     // Category
@@ -121,7 +126,17 @@ public class ProductsPage extends CommonToAllPage {
         click(brand(brandName));
     }
 
+    public void addToCart() {
+        scrollAndClick(blueTop);
+    }
 
+    public CartPage clickViewCart(){
+        click(viewCart);
+        return new CartPage(driver);
+    }
+    public  void clickContinueShopping(){
+        click(continueShopping);
+    }
     // =========================
     // Verifications
     // =========================

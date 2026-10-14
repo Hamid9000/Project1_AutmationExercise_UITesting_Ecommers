@@ -99,6 +99,17 @@ public class CommonToAllPage {
 
         waitForClickable(locator).click();
     }
+    protected void scrollAndClick(By locator) {
+        WebElement element = waitForClickable(locator);
+
+        ((JavascriptExecutor) driver)
+                .executeScript(
+                        "arguments[0].scrollIntoView({block: 'center'});",
+                        element
+                );
+
+        element.click();
+    }
     protected void jsClick(By locator) {
         WebElement element = waitForElement(locator);
 

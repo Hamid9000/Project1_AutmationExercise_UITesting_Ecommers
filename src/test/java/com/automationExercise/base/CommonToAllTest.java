@@ -8,9 +8,13 @@ public class CommonToAllTest {
 
     @BeforeMethod
     public void setUp() {
+        //System.out.println("Before browser initialization");
 
         DriverManager.initDriver();
+
+        //System.out.println("After browser initialization");
     }
+
 
     @AfterMethod(alwaysRun = true)
     public void tearDown() {

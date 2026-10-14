@@ -11,3 +11,8 @@ db.table=Product_Search_TestData
 Id fizejazud@mailinator.com
 pass Pa$$w0rd!
 name Elijah Mcintyre
+
+
+
+Project Address
+C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers 
