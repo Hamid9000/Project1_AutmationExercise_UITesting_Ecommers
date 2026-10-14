@@ -10,4 +10,6 @@ public class OrderConfirmationPage extends CommonToAllPage {
     public OrderConfirmationPage(WebDriver driver) {
         super(driver);
     }
+
+
 }

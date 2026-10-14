@@ -3,21 +3,18 @@ package com.automationExercise.test.smoke;
 import com.automationExercise.base.CommonToAllTest;
 import com.automationExercise.driver.DriverManager;
 import com.automationExercise.pages.*;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CartTest extends CommonToAllTest {
 
-    @Test(
-            description = "Verify that user can place order"
-    )
-    public void verifyUserCanOrder() throws InterruptedException {
-
+    @Test(description = "Verify that user can place an order successfully")
+    public void verifyUserCanPlaceOrder() throws InterruptedException {
         String id = "fizejazud@mailinator.com";
         String password = "Pa$$w0rd!";
 
         // Step 1: Open Products page
-        ProductsPage productsPage =
-                new ProductsPage(DriverManager.getDriver());
+        ProductsPage productsPage = new ProductsPage(DriverManager.getDriver());
 
         productsPage.openProductsPage();
 
@@ -28,12 +25,10 @@ public class CartTest extends CommonToAllTest {
         CartPage cartPage = productsPage.clickViewCart();
 
         // Step 4: Proceed to checkout
-        CheckoutPage checkoutPage =
-                cartPage.clickProceedToCheckout();
+        CheckoutPage checkoutPage = cartPage.clickProceedToCheckout();
 
         // Step 5: Click Register / Login
-        LoginPage loginPage =
-                checkoutPage.clickRegistrationLogin();
+        LoginPage loginPage = checkoutPage.clickRegistrationLogin();
 
         // Step 6: Login
         HomePage homePage = loginPage.login(id, password);
@@ -42,22 +37,21 @@ public class CartTest extends CommonToAllTest {
         CartPage cartPageAfterLogin = homePage.clickCart();
 
         // Step 8: Proceed to checkout again
-        CheckoutPage checkoutPageAfterLogin =
-                cartPageAfterLogin.clickProceedToCheckout();
+        CheckoutPage checkoutPageAfterLogin = cartPageAfterLogin.clickProceedToCheckout();
 
         // Step 9: Enter order message
         checkoutPageAfterLogin.enterMessage("N/A");
 
         // Step 10: Click Place Order
-        PaymentPage paymentPage =
-                checkoutPageAfterLogin.clickPlaceOrderButton();
+        PaymentPage paymentPage = checkoutPageAfterLogin.clickPlaceOrderButton();
 
-        Thread.sleep(10000);
 
-        // Step 11: Enter payment details
-        // Call your existing PaymentPage methods here.
+        // Step 11: Complete payment
+        OrderConfirmationPage orderConfirmationPage = paymentPage.completePayment("Hamid", "4111111111111111", "123", "12", "2028");
 
         // Step 12: Verify order confirmation
-        // Add an assertion for the ORDER PLACED! message.
+        Assert.assertTrue(paymentPage.isOrderPlacedMessageDisplayed(), "Order placed message is not displayed");
+        Thread.sleep(10000);
+
     }
 }

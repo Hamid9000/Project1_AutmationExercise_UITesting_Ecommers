@@ -75,4 +75,23 @@ public class PaymentPage extends CommonToAllPage {
     public void clickInvoiceLink() {
         click(invoiceLink);
     }
+
+
+
+    // Full Payment
+    public OrderConfirmationPage completePayment(
+            String name,
+            String cardNumber,
+            String cvc,
+            String month,
+            String year) {
+
+        enterNameOnCard(name);
+        enterCardNumber(cardNumber);
+        enterCvc(cvc);
+        enterExpiryMonth(month);
+        enterExpiryYear(year);
+
+        return clickPayAndConfirmOrder();
+    }
 }
