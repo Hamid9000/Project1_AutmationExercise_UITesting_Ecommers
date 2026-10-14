@@ -7,61 +7,72 @@ import org.openqa.selenium.WebDriver;
 
 public class PaymentPage extends CommonToAllPage {
 
-    // url
-    public String paymentUrl = ConfigLoader.get("payment_url");
+    // URL
+    private final String paymentUrl = ConfigLoader.get("payment_url");
 
-    // Locater
+    // Locators
+    private final By nameOnCardField = By.name("name_on_card");
+    private final By cardNumberField = By.name("card_number");
+    private final By cvcField = By.name("cvc");
+    private final By expiryMonthField = By.name("expiry_month");
+    private final By expiryYearField = By.name("expiry_year");
+    private final By payAndConfirmOrderButton = By.id("submit");
+    private final By orderPlacedMessage =
+            By.xpath("//h2[@data-qa='order-placed']");
+    private final By continueButton =
+            By.xpath("//a[@data-qa='continue-button']");
+    private final By invoiceLink =
+            By.xpath("//a[contains(@href,'/download_invoice/')]");
 
-    private By nameOnCard = By.name("name_on_card");
-    private By cardNumber = By.name("card_number");
-    private By cvc = By.name("cvc");
-    private By expiryMonth = By.name("expiry_month");
-    private By expiryYear = By.name("expiry_year");
-    private By submit = By.id("submit");
-    private By orderPlace = By.xpath("//h2[@data-qa='order-placed']");
-    private By continueButton = By.xpath("//a[@data-qa='continue-button']");
-    private  By invoice = By.xpath("//a[@href='/download_invoice/1300']");
-
-    // Constructer
-
-    public PaymentPage(WebDriver driver){
+    // Constructor
+    public PaymentPage(WebDriver driver) {
         super(driver);
     }
 
-    // Open page
-
-    //Action
-    public void clickNameOnCard(){
-        click(nameOnCard);
-    }
-    public void clickCardNumber(){
-        click(cardNumber);
+    // Open Payment Page
+    public void openPaymentPage() {
+        openPage(paymentUrl);
     }
 
-    public void clickCvc(){
-        click(cvc);
+    // Payment Actions
+    public void enterNameOnCard(String name) {
+        enter(nameOnCardField, name);
     }
 
-    public void clickExpiryMonth(){
-        click(expiryMonth);
+    public void enterCardNumber(String number) {
+        enter(cardNumberField, number);
     }
 
-    public  void clickExpiryYear(){
-        click(expiryYear);
+    public void enterCvc(String cvcNumber) {
+        enter(cvcField, cvcNumber);
     }
 
-    public void clickSubmit(){
-        click(submit);
+    public void enterExpiryMonth(String month) {
+        enter(expiryMonthField, month);
     }
-    public  void clickOrderPlace(){
-        click(orderPlace);
+
+    public void enterExpiryYear(String year) {
+        enter(expiryYearField, year);
     }
-    public  void clickContinueButton(){
+
+    public OrderConfirmationPage clickPayAndConfirmOrder() {
+        click(payAndConfirmOrderButton);
+        return new OrderConfirmationPage(driver);
+    }
+
+    // Order Verification
+    public boolean isOrderPlacedMessageDisplayed() {
+        return driver.findElement(orderPlacedMessage).isDisplayed();
+    }
+
+    // Navigation
+    public HomePage clickContinueButton() {
         click(continueButton);
+        return new HomePage(driver);
     }
 
-    public void clickInvoice(){
-        click(invoice);
+    // Invoice
+    public void clickInvoiceLink() {
+        click(invoiceLink);
     }
-
 }

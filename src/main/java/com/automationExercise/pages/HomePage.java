@@ -6,121 +6,99 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePage extends CommonToAllPage {
 
-    // =========================
     // Home Page Locators
-    // =========================
-
-    private By home =
+    private final By homeLink =
             By.xpath("//a[contains(text(),'Home')]");
 
-    private By products =
+    private final By productsLink =
             By.xpath("//a[contains(text(),'Products')]");
 
-    private By cart =
+    private final By cartLink =
             By.xpath("//a[contains(text(),'Cart')]");
 
-    private By logout =
+    private final By logoutLink =
             By.xpath("//a[contains(text(),'Logout')]");
 
-    private By deleteAccount =
+    private final By deleteAccountLink =
             By.xpath("//a[contains(text(),'Delete Account')]");
 
-    private By testCases =
+    private final By testCasesLink =
             By.xpath("//a[contains(text(),'Test Cases')]");
 
-    private By apiTesting =
+    private final By apiTestingLink =
             By.xpath("//a[contains(text(),'API Testing')]");
 
-    private By videoTutorials =
+    private final By videoTutorialsLink =
             By.xpath("//a[contains(text(),'Video Tutorials')]");
 
-    private By contactUs =
+    private final By contactUsLink =
             By.xpath("//a[contains(text(),'Contact us')]");
 
-    private By loggedInAs =
+    private final By loggedInAsLink =
             By.xpath("//a[contains(text(),'Logged in as')]");
 
-
-    // =========================
     // Constructor
-    // =========================
-
     public HomePage(WebDriver driver) {
         super(driver);
     }
 
-
-    // =========================
     // Verification
-    // =========================
-
     public boolean isHomePageDisplayed() {
-
-        return driver.findElement(home).isDisplayed();
+        return driver.findElement(homeLink).isDisplayed();
     }
 
     public boolean isLoggedInAsDisplayed() {
-
-        return driver.findElement(loggedInAs).isDisplayed();
+        return driver.findElement(loggedInAsLink).isDisplayed();
     }
 
-
-    // =========================
     // Navigation Actions
-    // =========================
-
-    public void clickHome() {
-
-        driver.findElement(home).click();
+    public HomePage clickHome() {
+        click(homeLink);
+        return this;
     }
 
-    public void clickProducts() {
-
-        driver.findElement(products).click();
+    public ProductsPage clickProducts() {
+        click(productsLink);
+        return new ProductsPage(driver);
     }
 
-    public void clickCart() {
-
-        driver.findElement(cart).click();
+    public CartPage clickCart() {
+        click(cartLink);
+        return new CartPage(driver);
     }
 
-    public void clickLogout() {
-
-        driver.findElement(logout).click();
+    public HomePage clickLogout() {
+        click(logoutLink);
+        return this;
     }
 
-    public void clickDeleteAccount() {
-
-        driver.findElement(deleteAccount).click();
+    public HomePage clickDeleteAccount() {
+        click(deleteAccountLink);
+        return this;
     }
 
-    public void clickTestCases() {
-
-        driver.findElement(testCases).click();
+    public HomePage clickTestCases() {
+        click(testCasesLink);
+        return this;
     }
 
-    public void clickApiTesting() {
-
-        driver.findElement(apiTesting).click();
+    public HomePage clickApiTesting() {
+        click(apiTestingLink);
+        return this;
     }
 
-    public void clickVideoTutorials() {
-
-        driver.findElement(videoTutorials).click();
+    public HomePage clickVideoTutorials() {
+        click(videoTutorialsLink);
+        return this;
     }
 
-    public void clickContactUs() {
-
-        driver.findElement(contactUs).click();
+    public HomePage clickContactUs() {
+        click(contactUsLink);
+        return this;
     }
 
-
-    // =========================
     // Logged-in User
-    // =========================
-
     public String getLoggedInUserText() {
-
-        return driver.findElement(loggedInAs).getText();
+        return driver.findElement(loggedInAsLink).getText();
     }
 }

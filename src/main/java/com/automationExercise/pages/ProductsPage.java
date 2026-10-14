@@ -10,10 +10,8 @@ public class ProductsPage extends CommonToAllPage {
     // =========================
     // URL
     // =========================
+    protected String productUrl = ConfigLoader.get("products_url");
 
-    public void openProductsPage() {
-        openPage(ConfigLoader.get("products_url"));
-    }
 
 
     // =========================
@@ -39,6 +37,8 @@ public class ProductsPage extends CommonToAllPage {
     // ===========================
     private By viewCart = By.xpath("//a[@href='/view_cart' ]/ u[text()='View Cart']");
     private By continueShopping = By.xpath("//button[text()='Continue Shopping']");
+
+
 
     // =========================
     // Category
@@ -89,6 +89,13 @@ public class ProductsPage extends CommonToAllPage {
         super(driver);
     }
 
+
+    // =========================
+    // Open Product  Page
+    // =========================
+    public void openProductsPage() {
+        openPage(productUrl);
+    }
 
     // =========================
     // Actions

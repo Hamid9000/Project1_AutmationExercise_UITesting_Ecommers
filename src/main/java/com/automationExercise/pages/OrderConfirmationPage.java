@@ -1,4 +1,13 @@
+
 package com.automationExercise.pages;
 
-public class OrderConfirmationPage {
+import com.automationExercise.base.CommonToAllPage;
+import org.openqa.selenium.WebDriver;
+
+public class OrderConfirmationPage extends CommonToAllPage {
+
+    // Constructor
+    public OrderConfirmationPage(WebDriver driver) {
+        super(driver);
+    }
 }

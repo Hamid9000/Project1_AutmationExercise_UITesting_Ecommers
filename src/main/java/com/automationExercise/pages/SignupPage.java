@@ -1,3 +1,4 @@
+
 package com.automationExercise.pages;
 
 import com.automationExercise.base.CommonToAllPage;
@@ -7,132 +8,73 @@ import org.openqa.selenium.WebDriver;
 
 public class SignupPage extends CommonToAllPage {
 
-    // =========================
     // URL
-    // =========================
+    private final String baseUrl = ConfigLoader.get("base_url");
+    private final String signupUrl = ConfigLoader.get("signup_url");
 
-    private final String baseUrl =
-            ConfigLoader.get("base_url");
-
-    private final String signupUrl =
-            ConfigLoader.get("signup_url");
-
-
-    // =========================
-    // Signup Locators
-    // =========================
-
-    private final By signupName =
-            By.name("name");
-
-    private final By signupEmail =
+    // Locators
+    private final By signupNameField = By.name("name");
+    private final By signupEmailField =
             By.xpath("//input[@data-qa='signup-email']");
-
     private final By signupButton =
             By.xpath("//button[@data-qa='signup-button']");
 
-
-    // =========================
-    // Signup Verification
-    // =========================
-
-    // Application error message for already registered email
+    // Error message
     private final By signupErrorMessage =
             By.xpath("//p[contains(text(),'Email Address already exist!')]");
 
-
-    // =========================
     // Constructor
-    // =========================
-
     public SignupPage(WebDriver driver) {
         super(driver);
     }
 
-
-    // =========================
-    // Page Navigation
-    // =========================
-
+    // Page navigation
     public SignupPage openSignupPage() {
         driver.get(baseUrl + signupUrl);
         return this;
     }
 
-    public AccountInformationPage navigateToAccountInformation() {
-        click(signupButton);
-        return new AccountInformationPage(driver);
-    }
-
-
-    // =========================
-    // Signup Actions
-    // =========================
-
+    // Signup actions
     public void enterSignupName(String name) {
-        enter(signupName, name);
+        enter(signupNameField, name);
     }
 
     public void enterSignupEmail(String email) {
-        enter(signupEmail, email);
+        enter(signupEmailField, email);
     }
-
-    // Click Signup button
-    public void clickSignupButton() {
-        click(signupButton);
-    }
-
-
-    // =========================
-    // Complete Signup
-    // =========================
 
     public AccountInformationPage signup(String name, String email) {
-
         enterSignupName(name);
         enterSignupEmail(email);
+        click(signupButton);
 
-        return navigateToAccountInformation();
+        return new AccountInformationPage(driver);
     }
 
-
-    // =========================
-    // Application Error Validation
-    // =========================
-
-    // Verify whether the existing email error message is displayed
+    // Error validation
     public boolean isSignupErrorDisplayed() {
         return waitForElement(signupErrorMessage).isDisplayed();
     }
 
-    // Get the existing email error message displayed on the UI
     public String getSignupErrorMessage() {
         return waitForElement(signupErrorMessage).getText();
     }
 
-
-    // =========================
-    // Browser Validation
-    // =========================
-
-    // Get browser validation message for Name field
+    // Browser validation
     public String getNameValidationMessage() {
-        return driver.findElement(signupName)
+        return driver.findElement(signupNameField)
                 .getAttribute("validationMessage");
     }
 
-    // Verify whether browser validation message is displayed for Name
     public boolean isNameValidationDisplayed() {
         return !getNameValidationMessage().isEmpty();
     }
 
-    // Get browser validation message for Email field
     public String getEmailValidationMessage() {
-        return driver.findElement(signupEmail)
+        return driver.findElement(signupEmailField)
                 .getAttribute("validationMessage");
     }
 
-    // Verify whether browser validation message is displayed for Email
     public boolean isEmailValidationDisplayed() {
         return !getEmailValidationMessage().isEmpty();
     }

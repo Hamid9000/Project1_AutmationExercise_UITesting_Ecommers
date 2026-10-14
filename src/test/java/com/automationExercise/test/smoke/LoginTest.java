@@ -1,3 +1,4 @@
+
 package com.automationExercise.test.smoke;
 
 import com.automationExercise.base.CommonToAllTest;
@@ -17,21 +18,16 @@ public class LoginTest extends CommonToAllTest {
     )
     public void validLoginTest(String email, String password) {
 
-        LoginPage loginPage =
-                new LoginPage(DriverManager.getDriver());
+        LoginPage loginPage = new LoginPage(DriverManager.getDriver());
 
         loginPage.openLoginPage();
-
         loginPage.login(email, password);
 
         Assert.assertFalse(
-                DriverManager.getDriver()
-                        .getCurrentUrl()
-                        .contains("login"),
+                DriverManager.getDriver().getCurrentUrl().contains("login"),
                 "User should be logged in successfully"
         );
     }
-
 
     @Test(
             description = "Verify login functionality with invalid credentials",
@@ -44,15 +40,12 @@ public class LoginTest extends CommonToAllTest {
             String password,
             String expectedErrorMessage) {
 
-        LoginPage loginPage =
-                new LoginPage(DriverManager.getDriver());
+        LoginPage loginPage = new LoginPage(DriverManager.getDriver());
 
         loginPage.openLoginPage();
-
         loginPage.login(email, password);
 
-        String actualErrorMessage =
-                loginPage.getLoginErrorMessage();
+        String actualErrorMessage = loginPage.getLoginErrorMessage();
 
         Assert.assertEquals(
                 actualErrorMessage,

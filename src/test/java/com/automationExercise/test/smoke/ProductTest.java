@@ -1,3 +1,4 @@
+
 package com.automationExercise.test.smoke;
 
 import com.automationExercise.base.CommonToAllTest;
@@ -13,13 +14,10 @@ public class ProductTest extends CommonToAllTest {
     private static final Logger logger =
             LogManager.getLogger(ProductTest.class);
 
-
-    // =========================================================
     // TC_PROD_001 - Verify Products Page
-    // =========================================================
-
     @Test(
-            description = "TC_PROD_001 - Verify Products page is displayed"
+            description = "TC_PROD_001 - Verify Products page is displayed",
+            groups = {"smoke"}
     )
     public void verifyProductsPage() {
 
@@ -46,13 +44,10 @@ public class ProductTest extends CommonToAllTest {
         logger.info("Test passed: TC_PROD_001");
     }
 
-
-    // =========================================================
     // TC_PROD_002 - Verify Product Search
-    // =========================================================
-
     @Test(
-            description = "TC_PROD_002 - Verify product search"
+            description = "TC_PROD_002 - Verify product search",
+            groups = {"smoke"}
     )
     public void verifyProductSearch() {
 
@@ -78,13 +73,10 @@ public class ProductTest extends CommonToAllTest {
         logger.info("Test passed: TC_PROD_002");
     }
 
-
-    // =========================================================
     // TC_PROD_003 - Verify Category
-    // =========================================================
-
     @Test(
-            description = "TC_PROD_003 - Verify category"
+            description = "TC_PROD_003 - Verify category",
+            groups = {"smoke"}
     )
     public void verifyCategory() {
 
@@ -108,13 +100,10 @@ public class ProductTest extends CommonToAllTest {
         logger.info("Test passed: TC_PROD_003");
     }
 
-
-    // =========================================================
     // TC_PROD_004 - Verify Sub-Category
-    // =========================================================
-
     @Test(
-            description = "TC_PROD_004 - Verify sub-category"
+            description = "TC_PROD_004 - Verify sub-category",
+            groups = {"smoke"}
     )
     public void verifySubCategory() {
 
@@ -130,30 +119,21 @@ public class ProductTest extends CommonToAllTest {
         productsPage.selectCategory("Women");
 
         logger.info("Selecting sub-category: Tops");
-        productsPage.selectSubCategory(
-                "Women",
-                "Tops"
-        );
+        productsPage.selectSubCategory("Women", "Tops");
 
         logger.info("Verifying Women - Tops sub-category");
         Assert.assertTrue(
-                productsPage.isSubCategoryDisplayed(
-                        "Women",
-                        "Tops"
-                ),
+                productsPage.isSubCategoryDisplayed("Women", "Tops"),
                 "Women - Tops sub-category is not displayed"
         );
 
         logger.info("Test passed: TC_PROD_004");
     }
 
-
-    // =========================================================
     // TC_PROD_005 - Verify Brand
-    // =========================================================
-
     @Test(
-            description = "TC_PROD_005 - Verify brand"
+            description = "TC_PROD_005 - Verify brand",
+            groups = {"smoke"}
     )
     public void verifyBrand() {
 
