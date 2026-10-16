@@ -15,7 +15,7 @@ public class LoginTest extends CommonToAllTest {
     @Test(
             description = "Verify login with valid credentials",
             groups = {"smoke"},
-            dataProvider = "login○ValidData",
+            dataProvider = "loginValidData",
             dataProviderClass = LoginDataProvider.class
             //retryAnalyzer = RetryAnalyzer.class
     )
