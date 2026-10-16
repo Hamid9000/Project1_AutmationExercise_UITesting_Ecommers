@@ -27,7 +27,7 @@ public class SignupTest extends CommonToAllTest {
     // ============================================================
 
     @Test(
-            dataProvider = "signupCSVData",
+            dataProvider = "signupPositiveData",
             dataProviderClass = SignupDataProvider.class,
             description = "Verify that a new user can successfully create an account with valid details",
             groups = {"smoke"},

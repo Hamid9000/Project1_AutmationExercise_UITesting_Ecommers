@@ -865,3 +865,112 @@
 2026-10-14 16:02:00 INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
 
+2026-10-15 12:59:15 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-15 13:00:00 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-15 13:01:08 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-15 13:04:38 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 12:49:12 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 12:54:05 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 12:55:22 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 12:57:28 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 12:57:37 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_001
+2026-10-16 12:57:37 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-10-16 12:57:37 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Quinn Cochran
+2026-10-16 12:57:37 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-10-16 12:57:41 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-10-16 12:57:41 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-16 12:57:44 INFO  com.automationExercise.test.smoke.SignupTest - Account information filled successfully
+2026-10-16 12:57:44 INFO  com.automationExercise.test.smoke.SignupTest - Creating account
+2026-10-16 12:57:47 INFO  com.automationExercise.test.smoke.SignupTest - Verifying Account Created message
+2026-10-16 12:57:47 INFO  com.automationExercise.test.smoke.SignupTest - Test Case TC_SIGNUP_001 passed successfully
+2026-10-16 12:57:54 INFO  com.automationExercise.test.smoke.SignupTest - Test data cleanup successful for: quinn.valid001@example.com
+2026-10-16 12:57:56 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_002
+2026-10-16 12:57:56 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-10-16 12:57:56 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Sarah Johnson
+2026-10-16 12:57:56 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-10-16 12:58:00 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-10-16 12:58:00 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Sarah Johnson
+2026-10-16 12:58:03 INFO  com.automationExercise.test.smoke.SignupTest - Account information filled successfully
+2026-10-16 12:58:03 INFO  com.automationExercise.test.smoke.SignupTest - Creating account
+2026-10-16 12:58:05 INFO  com.automationExercise.test.smoke.SignupTest - Verifying Account Created message
+2026-10-16 12:58:05 INFO  com.automationExercise.test.smoke.SignupTest - Test Case TC_SIGNUP_002 passed successfully
+2026-10-16 12:58:06 INFO  com.automationExercise.test.smoke.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-16 12:58:07 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_003
+2026-10-16 12:58:07 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-10-16 12:58:07 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Aarav Mehta
+2026-10-16 12:58:07 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-10-16 12:58:12 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-10-16 12:58:12 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Aarav Mehta
+2026-10-16 12:58:14 INFO  com.automationExercise.test.smoke.SignupTest - Account information filled successfully
+2026-10-16 12:58:14 INFO  com.automationExercise.test.smoke.SignupTest - Creating account
+2026-10-16 12:58:17 INFO  com.automationExercise.test.smoke.SignupTest - Verifying Account Created message
+2026-10-16 12:58:17 INFO  com.automationExercise.test.smoke.SignupTest - Test Case TC_SIGNUP_003 passed successfully
+2026-10-16 12:58:19 INFO  com.automationExercise.test.smoke.SignupTest - Test data cleanup successful for: aarav.valid003@example.com
+2026-10-16 12:58:20 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_004
+2026-10-16 12:58:20 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-10-16 12:58:20 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Emily Carter
+2026-10-16 12:58:20 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-10-16 12:58:23 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-10-16 12:58:23 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Emily Carter
+2026-10-16 12:58:26 INFO  com.automationExercise.test.smoke.SignupTest - Account information filled successfully
+2026-10-16 12:58:26 INFO  com.automationExercise.test.smoke.SignupTest - Creating account
+2026-10-16 12:58:28 INFO  com.automationExercise.test.smoke.SignupTest - Verifying Account Created message
+2026-10-16 12:58:29 INFO  com.automationExercise.test.smoke.SignupTest - Test Case TC_SIGNUP_004 passed successfully
+2026-10-16 12:58:30 INFO  com.automationExercise.test.smoke.SignupTest - Test data cleanup successful for: emily.valid004@example.com
+2026-10-16 12:58:31 INFO  com.automationExercise.test.smoke.SignupTest - Test Case ID: TC_SIGNUP_005
+2026-10-16 12:58:31 INFO  com.automationExercise.test.smoke.SignupTest - Test Type: Positive
+2026-10-16 12:58:31 INFO  com.automationExercise.test.smoke.SignupTest - Starting valid signup test for user: Rohan Patil
+2026-10-16 12:58:31 INFO  com.automationExercise.test.smoke.SignupTest - Opening Signup page
+2026-10-16 12:58:37 INFO  com.automationExercise.test.smoke.SignupTest - Signup details submitted successfully
+2026-10-16 12:58:37 INFO  com.automationExercise.test.smoke.SignupTest - Filling account information for user: Rohan Patil
+2026-10-16 12:58:39 INFO  com.automationExercise.test.smoke.SignupTest - Account information filled successfully
+2026-10-16 12:58:39 INFO  com.automationExercise.test.smoke.SignupTest - Creating account
+2026-10-16 12:58:44 INFO  com.automationExercise.test.smoke.SignupTest - Verifying Account Created message
+2026-10-16 12:58:44 INFO  com.automationExercise.test.smoke.SignupTest - Test Case TC_SIGNUP_005 passed successfully
+2026-10-16 12:58:44 INFO  com.automationExercise.test.smoke.SignupTest - Test data cleanup successful for: rohan.valid005@example.com
+2026-10-16 13:00:02 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 13:00:04 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 13:01:30 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 13:09:37 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 13:13:06 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 13:16:28 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 13:21:43 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 14:54:45 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 14:56:38 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-16 15:03:06 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+

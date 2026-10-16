@@ -17,6 +17,7 @@ public class CartTest extends CommonToAllTest {
         String cvc ="123";
         String month="12";
         String year ="2008";
+        String message ="N/A";
 
         // Step 1: Open Products page
         ProductsPage productsPage = new ProductsPage(DriverManager.getDriver());
@@ -45,7 +46,7 @@ public class CartTest extends CommonToAllTest {
         CheckoutPage checkoutPageAfterLogin = cartPageAfterLogin.clickProceedToCheckout();
 
         // Step 9: Enter order message
-        checkoutPageAfterLogin.enterMessage("N/A");
+        checkoutPageAfterLogin.enterMessage(message);
 
         // Step 10: Click Place Order
         PaymentPage paymentPage = checkoutPageAfterLogin.clickPlaceOrderButton();
