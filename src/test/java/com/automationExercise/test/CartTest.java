@@ -1,4 +1,4 @@
-package com.automationExercise.test.smoke;
+package com.automationExercise.test;
 
 import com.automationExercise.base.CommonToAllTest;
 import com.automationExercise.driver.DriverManager;
@@ -8,16 +8,17 @@ import org.testng.annotations.Test;
 
 public class CartTest extends CommonToAllTest {
 
-    @Test(description = "Verify that user can place an order successfully")
+    @Test(description = "TC_CART_001 :Verify that user can place an order successfully",
+            groups = {"smoke"})
     public void verifyUserCanPlaceOrder() throws InterruptedException {
         String id = "fizejazud@mailinator.com";
         String password = "Pa$$w0rd!";
-        String name ="Hamid";
-        String cardNumber ="4111111111111111";
-        String cvc ="123";
-        String month="12";
-        String year ="2008";
-        String message ="N/A";
+        String name = "Hamid";
+        String cardNumber = "4111111111111111";
+        String cvc = "123";
+        String month = "12";
+        String year = "2008";
+        String message = "N/A";
 
         // Step 1: Open Products page
         ProductsPage productsPage = new ProductsPage(DriverManager.getDriver());
@@ -53,7 +54,7 @@ public class CartTest extends CommonToAllTest {
 
 
         // Step 11: Complete payment
-        OrderConfirmationPage orderConfirmationPage = paymentPage.completePayment(name, cardNumber,cvc,month,year);
+        OrderConfirmationPage orderConfirmationPage = paymentPage.completePayment(name, cardNumber, cvc, month, year);
 
         // Step 12: Verify order confirmation
         Assert.assertTrue(paymentPage.isOrderPlacedMessageDisplayed(), "Order placed message is not displayed");

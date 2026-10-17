@@ -12,7 +12,8 @@ Id fizejazud@mailinator.com
 pass Pa$$w0rd!
 name Elijah Mcintyre
 
-
+#command for allure report
+allure serve target/allure-results
 
 Project Address
 C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers 

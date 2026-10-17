@@ -1,4 +1,4 @@
-package com.automationExercise.test.smoke;
+package com.automationExercise.test;
 
 import com.automationExercise.base.CommonToAllTest;
 import com.automationExercise.dataprovider.SignupDataProvider;
@@ -18,8 +18,13 @@ import org.testng.annotations.Test;
 
 public class SignupTest extends CommonToAllTest {
 
-    private static final Logger logger =
-            LoggerFactory.getLogger(SignupTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(SignupTest.class);
+
+    // ============================================================
+    // Test Case Info
+    // ============================================================
+    private static final String TC_SIGNUP_01 = "TC_SIGNUP_01";
+    private static final String TC_SIGNUP_01_NAME = "Verify that a new user can successfully create an account with valid details";
 
 
     // ============================================================
@@ -27,9 +32,9 @@ public class SignupTest extends CommonToAllTest {
     // ============================================================
 
     @Test(
-            dataProvider = "signupPositiveData",
+            dataProvider = "signupData",                    // ← yeh missing tha
             dataProviderClass = SignupDataProvider.class,
-            description = "Verify that a new user can successfully create an account with valid details",
+            description = TC_SIGNUP_01 + " : " + TC_SIGNUP_01_NAME,
             groups = {"smoke"},
             retryAnalyzer = RetryAnalyzer.class
     )
@@ -61,41 +66,28 @@ public class SignupTest extends CommonToAllTest {
         result.setAttribute("email", email);
         result.setAttribute("password", password);
 
-        logger.info("Test Case ID: {}", testCaseId);
-        logger.info("Test Type: {}", testType);
-        logger.info("Starting valid signup test for user: {}", name);
+        logger.info("=================================================");
+        logger.info("Test Case ID   : {}", testCaseId);
+        logger.info("Test Case Name : {}", TC_SIGNUP_01_NAME);
+        logger.info("Test Type      : {}", testType);
+        logger.info("User Name      : {}", name);
+        logger.info("=================================================");
 
-        SignupPage signupPage =
-                new SignupPage(DriverManager.getDriver());
+        SignupPage signupPage = new SignupPage(DriverManager.getDriver());
 
         logger.info("Opening Signup page");
-
-        AccountInformationPage accountInformationPage =
-                signupPage
-                        .openSignupPage()
-                        .signup(name, email);
+        AccountInformationPage accountInformationPage = signupPage
+                .openSignupPage()
+                .signup(name, email);
 
         logger.info("Signup details submitted successfully");
         logger.info("Filling account information for user: {}", name);
 
         accountInformationPage.fillAccountInformation(
-                title,
-                password,
-                dobDay,
-                dobMonth,
-                dobYear,
-                newsletter,
-                specialOffers,
-                firstName,
-                lastName,
-                company,
-                address,
-                address2,
-                country,
-                state,
-                city,
-                zipcode,
-                mobile
+                title, password, dobDay, dobMonth, dobYear,
+                newsletter, specialOffers, firstName, lastName,
+                company, address, address2, country, state,
+                city, zipcode, mobile
         );
 
         logger.info("Account information filled successfully");
@@ -111,10 +103,7 @@ public class SignupTest extends CommonToAllTest {
                 "Account Created message is not displayed"
         );
 
-        logger.info(
-                "Test Case {} passed successfully",
-                testCaseId
-        );
+        logger.info("Test Case {} - {} --> PASSED", testCaseId, TC_SIGNUP_01_NAME);
     }
 
 
@@ -125,27 +114,17 @@ public class SignupTest extends CommonToAllTest {
     @AfterMethod(alwaysRun = true)
     public void cleanupTestData(ITestResult result) {
 
-        String email =
-                (String) result.getAttribute("email");
-
-        String password =
-                (String) result.getAttribute("password");
+        String email = (String) result.getAttribute("email");
+        String password = (String) result.getAttribute("password");
 
         if (email != null && password != null) {
 
-            boolean deleted =
-                    UserApi.deleteUser(email, password);
+            boolean deleted = UserApi.deleteUser(email, password);
 
             if (deleted) {
-                logger.info(
-                        "Test data cleanup successful for: {}",
-                        email
-                );
+                logger.info("Test data cleanup successful for: {}", email);
             } else {
-                logger.info(
-                        "No account deleted for: {}",
-                        email
-                );
+                logger.warn("Test data cleanup failed for: {}", email);
             }
         }
     }

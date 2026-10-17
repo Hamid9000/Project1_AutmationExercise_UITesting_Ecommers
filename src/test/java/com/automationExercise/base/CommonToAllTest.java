@@ -6,13 +6,16 @@ import org.testng.annotations.BeforeMethod;
 
 public class CommonToAllTest {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() {
-        //System.out.println("Before browser initialization");
+      //  System.out.println("Before browser initialization");
 
         DriverManager.initDriver();
+//        System.out.println(
+//                "Driver after initialization: " + DriverManager.getDriver()
+//        );
 
-        //System.out.println("After browser initialization");
+       // System.out.println("After browser initialization");
     }
 
 

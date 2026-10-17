@@ -17,6 +17,7 @@ public class CommonToAllPage {
     // Constructor
     public CommonToAllPage(WebDriver driver) {
         this.driver = driver;
+
     }
 
     // =========================

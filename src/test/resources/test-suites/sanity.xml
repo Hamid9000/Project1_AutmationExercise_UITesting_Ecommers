@@ -14,11 +14,15 @@
 
     <test name="Smoke Tests">
 
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
 
-        <classes>
-            <class name="com.automationExercise.test.smoke.SignupTest"/>
-        </classes>
-
+        <packages>
+            <package name="com.automationExercise.test"/>
+        </packages>
 
     </test>
 

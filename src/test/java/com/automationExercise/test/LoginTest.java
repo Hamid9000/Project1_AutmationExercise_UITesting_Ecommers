@@ -1,10 +1,9 @@
 
-package com.automationExercise.test.smoke;
+package com.automationExercise.test;
 
 import com.automationExercise.base.CommonToAllTest;
 import com.automationExercise.dataprovider.LoginDataProvider;
 import com.automationExercise.driver.DriverManager;
-import com.automationExercise.listeners.RetryAnalyzer;
 import com.automationExercise.pages.LoginPage;
 
 import org.testng.Assert;
@@ -13,7 +12,7 @@ import org.testng.annotations.Test;
 public class LoginTest extends CommonToAllTest {
 
     @Test(
-            description = "Verify login with valid credentials",
+            description = "TC_LOGIN_001: Verify login with valid credentials",
             groups = {"smoke"},
             dataProvider = "loginValidData",
             dataProviderClass = LoginDataProvider.class
@@ -52,7 +51,7 @@ public class LoginTest extends CommonToAllTest {
 
 
     @Test(
-            description = "Verify login with invalid credentials",
+            description = "TC_LOGIN_002: Verify login with invalid credentials",
             groups = {"smoke"},
             dataProvider = "loginInvalidData",
             dataProviderClass = LoginDataProvider.class

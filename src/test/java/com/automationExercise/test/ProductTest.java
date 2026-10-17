@@ -1,5 +1,5 @@
 
-package com.automationExercise.test.smoke;
+package com.automationExercise.test;
 
 import com.automationExercise.base.CommonToAllTest;
 import com.automationExercise.driver.DriverManager;
@@ -16,7 +16,7 @@ public class ProductTest extends CommonToAllTest {
 
     // TC_PROD_001 - Verify Products Page
     @Test(
-            description = "TC_PROD_001 - Verify Products page is displayed",
+            description = "TC_PROD_001: Verify Products page is displayed",
             groups = {"smoke"}
     )
     public void verifyProductsPage() {
@@ -46,7 +46,7 @@ public class ProductTest extends CommonToAllTest {
 
     // TC_PROD_002 - Verify Product Search
     @Test(
-            description = "TC_PROD_002 - Verify product search",
+            description = "TC_PROD_002:  Verify product search",
             groups = {"smoke"}
     )
     public void verifyProductSearch() {
