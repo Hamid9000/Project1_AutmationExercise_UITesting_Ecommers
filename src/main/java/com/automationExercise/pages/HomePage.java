@@ -1,11 +1,14 @@
 package com.automationExercise.pages;
 
 import com.automationExercise.base.CommonToAllPage;
+import com.automationExercise.config.ConfigLoader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage extends CommonToAllPage {
+    //Home Url
 
+    private final String homeUrl = ConfigLoader.get("home_url");
     // Home Page Locators
     private final By homeLink =
             By.xpath("//a[contains(text(),'Home')]");
@@ -42,13 +45,10 @@ public class HomePage extends CommonToAllPage {
         super(driver);
     }
 
-    // Verification
-    public boolean isHomePageDisplayed() {
-        return driver.findElement(homeLink).isDisplayed();
-    }
+    // Open Home Page
 
-    public boolean isLoggedInAsDisplayed() {
-        return driver.findElement(loggedInAsLink).isDisplayed();
+    public void openHomePage() {
+        openPage(homeUrl);
     }
 
     // Navigation Actions
@@ -93,13 +93,25 @@ public class HomePage extends CommonToAllPage {
         return this;
     }
 
-    public HomePage clickContactUs() {
+    public ContactUsPage clickContactUs() {
         click(contactUsLink);
-        return this;
+        return new ContactUsPage(driver);
     }
 
     // Logged-in User
     public String getLoggedInUserText() {
         return driver.findElement(loggedInAsLink).getText();
+    }
+    // Verification
+    public boolean isHomePageDisplayed() {
+        return driver.findElement(homeLink).isDisplayed();
+    }
+
+    public boolean isLoggedInAsDisplayed() {
+        return driver.findElement(loggedInAsLink).isDisplayed();
+    }
+
+    public String getTitle() {
+       return driver.getTitle();
     }
 }

@@ -125,4 +125,22 @@ public class SignupTest extends CommonToAllTest {
             }
         }
     }
+
+    @Test (
+            description = "TC_SIGNUP_005: Verify that registered with exiting email and password show proper error",
+            groups = {"smoke"}
+    )
+    public void loginWithRegisteredEmail(){
+       String email ="vimuzebyku@mailinator.com";
+       String name ="kuli no 420";
+       String expectedSignupErrorMessage="Email Address already exist!";
+
+       SignupPage signupPage = new SignupPage(DriverManager.getDriver());
+       signupPage.openSignupPage();
+       signupPage.enterSignupName(name);
+       signupPage.enterSignupEmail(email);
+       signupPage.clickSignupButton();
+       Assert.assertTrue(signupPage.isSignupErrorDisplayed(),"Signup error is not displayed");
+       Assert.assertEquals(signupPage.getActualSignupErrorMessage(),expectedSignupErrorMessage,"Actual and Expected error is not matched");
+    }
 }
