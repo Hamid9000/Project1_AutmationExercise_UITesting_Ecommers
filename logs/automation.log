@@ -1362,3 +1362,155 @@
 2026-10-23 20:11:42 INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
 
+2026-10-23 22:49:41 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-23 22:50:09 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-23 22:51:41 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-23 23:07:41 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-23 23:24:44 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-23 23:50:16 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-23 23:53:15 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-23 23:53:49 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-23 23:53:49 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-23 23:53:49 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-23 23:53:49 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-23 23:53:52 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-23 23:53:52 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-23 23:54:16 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-23 23:54:16 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-23 23:54:16 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-23 23:54:16 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-23 23:54:17 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-23 23:54:17 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/products#google_vignette
+2026-10-23 23:54:17 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-23 23:54:17 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-23 23:54:20 INFO  com.automationExercise.test.ProductTest - Verifying product name visibility
+2026-10-23 23:54:20 INFO  com.automationExercise.test.ProductTest - Verifying category visibility
+2026-10-23 23:54:20 INFO  com.automationExercise.test.ProductTest - Verifying price visibility
+2026-10-23 23:54:20 INFO  com.automationExercise.test.ProductTest - Verifying availability visibility
+2026-10-23 23:54:20 INFO  com.automationExercise.test.ProductTest - Verifying condition visibility
+2026-10-23 23:54:21 INFO  com.automationExercise.test.ProductTest - Verifying brand visibility
+2026-10-23 23:54:21 INFO  com.automationExercise.test.ProductTest - Executing assertAll() to report any failed assertions
+2026-10-24 00:00:33 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 00:00:35 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 00:00:35 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 00:00:35 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 00:00:35 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 00:00:38 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 00:00:38 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 00:01:01 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 00:01:02 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 00:01:02 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 00:01:02 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 00:01:02 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-24 00:01:03 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/products#google_vignette
+2026-10-24 00:01:03 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-24 00:01:03 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-24 00:01:06 INFO  com.automationExercise.test.ProductTest - Verifying product name visibility
+2026-10-24 00:01:06 INFO  com.automationExercise.test.ProductTest - Verifying category visibility
+2026-10-24 00:01:06 INFO  com.automationExercise.test.ProductTest - Verifying price visibility
+2026-10-24 00:01:06 INFO  com.automationExercise.test.ProductTest - Verifying availability visibility
+2026-10-24 00:01:06 INFO  com.automationExercise.test.ProductTest - Verifying condition visibility
+2026-10-24 00:01:06 INFO  com.automationExercise.test.ProductTest - Verifying brand visibility
+2026-10-24 00:01:06 INFO  com.automationExercise.test.ProductTest - Executing assertAll() to report any failed assertions
+2026-10-24 00:04:46 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 00:04:48 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 00:04:48 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 00:04:48 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 00:04:48 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 00:04:55 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 00:04:55 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 00:05:19 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 00:05:19 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 00:05:19 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 00:05:20 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 00:05:20 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-24 00:05:20 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/products#google_vignette
+2026-10-24 00:05:20 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-24 00:05:20 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-24 00:05:25 INFO  com.automationExercise.test.ProductTest - Verifying product name visibility
+2026-10-24 00:05:25 INFO  com.automationExercise.test.ProductTest - Verifying category visibility
+2026-10-24 00:05:25 INFO  com.automationExercise.test.ProductTest - Verifying price visibility
+2026-10-24 00:05:25 INFO  com.automationExercise.test.ProductTest - Verifying availability visibility
+2026-10-24 00:05:25 INFO  com.automationExercise.test.ProductTest - Verifying condition visibility
+2026-10-24 00:05:25 INFO  com.automationExercise.test.ProductTest - Verifying brand visibility
+2026-10-24 00:05:25 INFO  com.automationExercise.test.ProductTest - Executing assertAll() to report any failed assertions
+2026-10-24 00:07:09 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 00:07:11 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 00:07:11 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 00:07:11 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 00:07:11 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 00:07:14 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 00:07:14 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 00:07:38 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 00:07:38 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 00:07:38 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 00:07:38 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 00:07:38 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-24 00:07:38 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/products#google_vignette
+2026-10-24 00:07:38 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-24 00:07:38 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-24 00:07:41 INFO  com.automationExercise.test.ProductTest - Verifying product name visibility
+2026-10-24 00:07:42 INFO  com.automationExercise.test.ProductTest - Verifying category visibility
+2026-10-24 00:07:42 INFO  com.automationExercise.test.ProductTest - Verifying price visibility
+2026-10-24 00:07:42 INFO  com.automationExercise.test.ProductTest - Verifying availability visibility
+2026-10-24 00:07:42 INFO  com.automationExercise.test.ProductTest - Verifying condition visibility
+2026-10-24 00:07:42 INFO  com.automationExercise.test.ProductTest - Verifying brand visibility
+2026-10-24 00:07:42 INFO  com.automationExercise.test.ProductTest - Executing assertAll() to report any failed assertions
+2026-10-24 00:07:42 INFO  com.automationExercise.test.ProductTest - All assertions passed
+2026-10-24 00:07:42 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 PASSED ==========
+2026-10-24 00:08:04 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 00:08:06 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 00:08:06 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 00:08:06 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 00:08:07 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 00:08:10 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 00:08:10 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 00:08:18 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 00:08:25 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 00:09:56 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 00:09:56 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 00:09:56 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 00:09:56 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 00:10:00 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 00:10:01 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 00:10:28 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 00:10:28 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 00:10:28 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 00:10:29 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 00:10:29 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-24 00:10:29 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/products#google_vignette
+2026-10-24 00:10:29 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-24 00:10:29 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - Verifying product name visibility
+2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - Verifying category visibility
+2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - Verifying price visibility
+2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - Verifying availability visibility
+2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - Verifying condition visibility
+2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - Verifying brand visibility
+2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - Executing assertAll() to report any failed assertions
+2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - All assertions passed
+2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 PASSED ==========

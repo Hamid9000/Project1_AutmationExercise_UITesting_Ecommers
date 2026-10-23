@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -184,7 +185,38 @@ public class CommonToAllPage {
     public void acceptAlert(){
         driver.switchTo().alert().accept();
     }
+     // ===========================
+     // Action
+     // ===========================
 
+
+    // Mouse hover
+    protected void mouseHover(By locator) {
+        WebElement element = waitUtils.waitForElementVisible(locator);
+        new Actions(driver).moveToElement(element).perform();
+    }
+
+    // Right click
+    protected void rightClick(By locator) {
+        WebElement element = waitUtils.waitForElementVisible(locator);
+        new Actions(driver).contextClick(element).perform();
+    }
+
+    // Double click
+    protected void doubleClick(By locator) {
+        WebElement element = waitUtils.waitForElementClickable(locator);
+        new Actions(driver).doubleClick(element).perform();
+    }
+
+    // Drag and drop
+    protected void dragAndDrop(By source, By target) {
+        WebElement sourceElement = waitUtils.waitForElementVisible(source);
+        WebElement targetElement = waitUtils.waitForElementVisible(target);
+
+        new Actions(driver)
+                .dragAndDrop(sourceElement, targetElement)
+                .perform();
+    }
 
     // =========================
     // Verification

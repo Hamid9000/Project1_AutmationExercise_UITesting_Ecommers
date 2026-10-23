@@ -1,12 +1,12 @@
-
 package com.automationExercise.test;
 
 import com.automationExercise.base.CommonToAllTest;
 import com.automationExercise.driver.DriverManager;
+import com.automationExercise.pages.HomePage;
 import com.automationExercise.pages.ProductsPage;
+import com.automationExercise.utils.AssertionUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ProductTest extends CommonToAllTest {
@@ -14,146 +14,114 @@ public class ProductTest extends CommonToAllTest {
     private static final Logger logger =
             LogManager.getLogger(ProductTest.class);
 
-    // TC_PROD_001 - Verify Products Page
+    // TC_PROD_008 - Verify Product Details
     @Test(
-            description = "TC_PROD_001: Verify Products page is displayed",
+            description = "TC_PROD_008: Verify product details are visible",
             groups = {"smoke"}
     )
     public void verifyProductsPage() {
 
-        logger.info("Starting test: TC_PROD_001 - Verify Products page is displayed");
+        String expectedProductName = "Blue Top";
+        int productNum = 1;
 
-        ProductsPage productsPage =
-                new ProductsPage(DriverManager.getDriver());
+        AssertionUtils assertion = new AssertionUtils();
 
-        logger.info("Opening Products page");
-        productsPage.openProductsPage();
+        logger.info("========== TC_PROD_008 STARTED ==========");
+        logger.info("Expected product name: {}", expectedProductName);
+        logger.info("Product number: {}", productNum);
 
-        logger.info("Verifying Products page is displayed");
-        Assert.assertTrue(
-                productsPage.isProductsPageDisplayed(),
-                "Products page is not displayed"
+        HomePage homePage = new HomePage(DriverManager.getDriver());
+
+        logger.info("Opening Home Page");
+        homePage.openHomePage();
+
+        logger.info("Verifying Home Page is displayed");
+        assertion.assertTrue(
+                homePage.isHomePageDisplayed(),
+                "Home page is not displayed"
         );
 
-        logger.info("Verifying Products URL");
-        Assert.assertTrue(
-                productsPage.isProductsUrlDisplayed(),
-                "Products URL is not correct"
+        logger.info("Navigating to Products Page");
+        ProductsPage productsPage = homePage.clickProducts();
+
+        logger.info("Opening All Products list");
+        productsPage.navigateToAllProductList();
+
+        logger.info("Verifying All Products title is displayed");
+        assertion.assertTrue(
+                productsPage.isAllProductsTitleDisplayed(),
+                "Products list title is not displayed"
         );
 
-        logger.info("Test passed: TC_PROD_001");
-    }
-
-    // TC_PROD_002 - Verify Product Search
-    @Test(
-            description = "TC_PROD_002:  Verify product search",
-            groups = {"smoke"}
-    )
-    public void verifyProductSearch() {
-
-        logger.info("Starting test: TC_PROD_002 - Verify product search");
-
-        ProductsPage productsPage =
-                new ProductsPage(DriverManager.getDriver());
-
-        logger.info("Opening Products page");
-        productsPage.openProductsPage();
-
-        logger.info("Searching for product: Blue Top");
-        productsPage.searchProduct("Blue Top");
-
-        productsPage.waitForFixTime(2000);
-
-        logger.info("Verifying Searched Products section");
-        Assert.assertTrue(
-                productsPage.isSearchResultDisplayed(),
-                "Searched Products section is not displayed"
+        logger.info("Verifying product list is displayed");
+        assertion.assertTrue(
+                productsPage.isProductListDisplay(),
+                "Product list is not displayed"
         );
 
-        logger.info("Test passed: TC_PROD_002");
-    }
+        logger.info("Clicking product number: {}", productNum);
+        productsPage.clickOnProduct(productNum);
 
-    // TC_PROD_003 - Verify Category
-    @Test(
-            description = "TC_PROD_003 - Verify category",
-            groups = {"smoke"}
-    )
-    public void verifyCategory() {
+        logger.info("Clicking View Product for product number: {}", productNum);
+        productsPage.clickOnViewProduct(productNum);
 
-        logger.info("Starting test: TC_PROD_003 - Verify category");
+        logger.info("Current Product Details URL: {}",
+                productsPage.getProductPageUrl());
 
-        ProductsPage productsPage =
-                new ProductsPage(DriverManager.getDriver());
+        logger.info("Verifying navigation to Product Details page");
+        assertion.assertTrue(
+                productsPage.getProductPageUrl().contains("/product"),
+                "User is not navigated to Product Details page"
+        );
+        System.out.println(productsPage.getProductPageUrl());
 
-        logger.info("Opening Products page");
-        productsPage.openProductsPage();
-
-        logger.info("Selecting category: Women");
-        productsPage.selectCategory("Women");
-
-        logger.info("Verifying Women category");
-        Assert.assertTrue(
-                productsPage.isCategoryDisplayed("Women"),
-                "Women category is not displayed"
+        logger.info("Verifying product name. Expected: {}", expectedProductName);
+        assertion.assertEquals(
+                productsPage.getProductName(),
+                expectedProductName,
+                "Incorrect product details page opened"
         );
 
-        logger.info("Test passed: TC_PROD_003");
-    }
-
-    // TC_PROD_004 - Verify Sub-Category
-    @Test(
-            description = "TC_PROD_004 - Verify sub-category",
-            groups = {"smoke"}
-    )
-    public void verifySubCategory() {
-
-        logger.info("Starting test: TC_PROD_004 - Verify sub-category");
-
-        ProductsPage productsPage =
-                new ProductsPage(DriverManager.getDriver());
-
-        logger.info("Opening Products page");
-        productsPage.openProductsPage();
-
-        logger.info("Selecting category: Women");
-        productsPage.selectCategory("Women");
-
-        logger.info("Selecting sub-category: Tops");
-        productsPage.selectSubCategory("Women", "Tops");
-
-        logger.info("Verifying Women - Tops sub-category");
-        Assert.assertTrue(
-                productsPage.isSubCategoryDisplayed("Women", "Tops"),
-                "Women - Tops sub-category is not displayed"
+        logger.info("Verifying product name visibility");
+        assertion.assertTrue(
+                productsPage.isProductNameDisplayed(),
+                "Product name is not displayed"
         );
 
-        logger.info("Test passed: TC_PROD_004");
-    }
-
-    // TC_PROD_005 - Verify Brand
-    @Test(
-            description = "TC_PROD_005 - Verify brand",
-            groups = {"smoke"}
-    )
-    public void verifyBrand() {
-
-        logger.info("Starting test: TC_PROD_005 - Verify brand");
-
-        ProductsPage productsPage =
-                new ProductsPage(DriverManager.getDriver());
-
-        logger.info("Opening Products page");
-        productsPage.openProductsPage();
-
-        logger.info("Selecting brand: POLO");
-        productsPage.selectBrand("POLO");
-
-        logger.info("Verifying POLO brand");
-        Assert.assertTrue(
-                productsPage.isBrandDisplayed("POLO"),
-                "POLO brand is not displayed"
+        logger.info("Verifying category visibility");
+        assertion.assertTrue(
+                productsPage.isCategoryDisplayed(),
+                "Category is not displayed"
         );
 
-        logger.info("Test passed: TC_PROD_005");
+        logger.info("Verifying price visibility");
+        assertion.assertTrue(
+                productsPage.isPriceDisplayed(),
+                "Price is not displayed"
+        );
+
+        logger.info("Verifying availability visibility");
+        assertion.assertTrue(
+                productsPage.isAvailabilityDisplayed(),
+                "Availability is not displayed"
+        );
+
+        logger.info("Verifying condition visibility");
+        assertion.assertTrue(
+                productsPage.isConditionDisplayed(),
+                "Condition is not displayed"
+        );
+
+        logger.info("Verifying brand visibility");
+        assertion.assertTrue(
+                productsPage.isBrandDisplayed(),
+                "Brand is not displayed"
+        );
+
+        logger.info("Executing assertAll() to report any failed assertions");
+        assertion.assertAll();
+
+        logger.info("All assertions passed");
+        logger.info("========== TC_PROD_008 PASSED ==========");
     }
 }
