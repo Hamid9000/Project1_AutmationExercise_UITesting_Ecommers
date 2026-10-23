@@ -1,3 +1,4 @@
+
 package com.automationExercise.pages;
 
 import com.automationExercise.base.CommonToAllPage;
@@ -11,94 +12,53 @@ public class AccountInformationPage extends CommonToAllPage {
     // Title
     // =========================
 
-    private By mrRadioButton =
-            By.id("id_gender1");
-
-    private By mrsRadioButton =
-            By.id("id_gender2");
-
+    private final By mrRadioButton = By.id("id_gender1");
+    private final By mrsRadioButton = By.id("id_gender2");
 
     // =========================
     // Account Information
     // =========================
 
-    private By name =
-            By.id("name");
-
-    private By email =
-            By.id("email");
-
-    private By password =
-            By.id("password");
-
+    private final By name = By.id("name");
+    private final By email = By.id("email");
+    private final By password = By.id("password");
 
     // =========================
     // Date of Birth
     // =========================
 
-    private By day =
-            By.id("days");
-
-    private By month =
-            By.id("months");
-
-    private By year =
-            By.id("years");
-
+    private final By day = By.id("days");
+    private final By month = By.id("months");
+    private final By year = By.id("years");
 
     // =========================
     // Preferences
     // =========================
 
-    private By newsletter =
-            By.id("newsletter");
-
-    private By specialOffers =
-            By.id("optin");
-
+    private final By newsletter = By.id("newsletter");
+    private final By specialOffers = By.id("option");
 
     // =========================
     // Address Information
     // =========================
 
-    private By firstName =
-            By.id("first_name");
-
-    private By lastName =
-            By.id("last_name");
-
-    private By company =
-            By.id("company");
-
-    private By address =
-            By.id("address1");
-
-    private By address2 =
-            By.id("address2");
-
-    private By country =
-            By.id("country");
-
-    private By state =
-            By.id("state");
-
-    private By city =
-            By.id("city");
-
-    private By zipcode =
-            By.id("zipcode");
-
-    private By mobileNumber =
-            By.id("mobile_number");
-
+    private final By firstName = By.id("first_name");
+    private final By lastName = By.id("last_name");
+    private final By company = By.id("company");
+    private final By address = By.id("address1");
+    private final By address2 = By.id("address2");
+    private final By country = By.id("country");
+    private final By state = By.id("state");
+    private final By city = By.id("city");
+    private final By zipcode = By.id("zipcode");
+    private final By mobileNumber = By.id("mobile_number");
 
     // =========================
     // Create Account
     // =========================
 
-    private By createAccountButton =
+    private final By createAccountButton =
             By.cssSelector("[data-qa='create-account']");
-
 
     // =========================
     // Constructor
@@ -107,7 +67,6 @@ public class AccountInformationPage extends CommonToAllPage {
     public AccountInformationPage(WebDriver driver) {
         super(driver);
     }
-
 
     // =========================
     // Title
@@ -120,7 +79,6 @@ public class AccountInformationPage extends CommonToAllPage {
     public void selectMrs() {
         click(mrsRadioButton);
     }
-
 
     // =========================
     // Account Information
@@ -138,43 +96,37 @@ public class AccountInformationPage extends CommonToAllPage {
         enter(password, value);
     }
 
-
     // =========================
     // Date of Birth
     // =========================
 
     public void selectDay(String value) {
-        Select select = new Select(waitForElement(day));
-        select.selectByVisibleText(value);
+        selectDropdownByText(day, value);
     }
 
     public void selectMonth(String value) {
-        Select select = new Select(waitForElement(month));
-        select.selectByVisibleText(value);
+        selectDropdownByText(month, value);
     }
 
     public void selectYear(String value) {
-        Select select = new Select(waitForElement(year));
-        select.selectByVisibleText(value);
+        selectDropdownByText(year, value);
     }
-
 
     // =========================
     // Preferences
     // =========================
 
     public void selectNewsletter() {
-        if (!waitForElement(newsletter).isSelected()) {
+        if (!waitUtils.waitForElementVisible(newsletter).isSelected()) {
             click(newsletter);
         }
     }
 
     public void selectSpecialOffers() {
-        if (!waitForElement(specialOffers).isSelected()) {
+        if (!waitUtils.waitForElementVisible(specialOffers).isSelected()) {
             click(specialOffers);
         }
     }
-
 
     // =========================
     // Address Information
@@ -201,7 +153,7 @@ public class AccountInformationPage extends CommonToAllPage {
     }
 
     public void selectCountry(String value) {
-        Select select = new Select(waitForElement(country));
+        Select select = new Select(waitUtils.waitForElementVisible(country));
         select.selectByVisibleText(value);
     }
 
@@ -221,99 +173,82 @@ public class AccountInformationPage extends CommonToAllPage {
         enter(mobileNumber, value);
     }
 
-
     // =========================
     // Field Value Verification
     // =========================
 
     public String getNameValue() {
-        return waitForElement(name)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(name).getAttribute("value");
     }
 
     public String getEmailValue() {
-        return waitForElement(email)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(email).getCssValue("value");
     }
 
     public String getPasswordValue() {
-        return waitForElement(password)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(password).getAttribute("value");
     }
 
     public String getSelectedDay() {
-        Select select = new Select(waitForElement(day));
-        return select.getFirstSelectedOption().getText();
+        return new Select(waitUtils.waitForElementVisible(day)).getFirstSelectedOption().getText();
     }
 
     public String getSelectedMonth() {
-        Select select = new Select(waitForElement(month));
-        return select.getFirstSelectedOption().getText();
+        return new Select(waitUtils.waitForElementVisible(month)).getFirstSelectedOption().getText();
     }
 
     public String getSelectedYear() {
-        Select select = new Select(waitForElement(year));
-        return select.getFirstSelectedOption().getText();
+        return new Select(waitUtils.waitForElementVisible(year)).getFirstSelectedOption().getText();
+
     }
 
     public boolean isNewsletterSelected() {
-        return waitForElement(newsletter).isSelected();
+        return waitUtils.waitForElementVisible(newsletter).isSelected();
     }
 
     public boolean isSpecialOffersSelected() {
-        return waitForElement(specialOffers).isSelected();
+        return waitUtils.waitForElementVisible(specialOffers).isSelected();
     }
 
     public String getFirstNameValue() {
-        return waitForElement(firstName)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(firstName).getAttribute("value");
     }
 
     public String getLastNameValue() {
-        return waitForElement(lastName)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(lastName).getAttribute("value");
     }
 
     public String getCompanyValue() {
-        return waitForElement(company)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(company).getAttribute("value");
     }
 
     public String getAddressValue() {
-        return waitForElement(address)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(address).getAttribute("value");
     }
 
     public String getAddress2Value() {
-        return waitForElement(address2)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(address2).getAttribute("value");
     }
 
     public String getSelectedCountry() {
-        Select select = new Select(waitForElement(country));
-        return select.getFirstSelectedOption().getText();
+        return new Select(waitUtils.waitForElementVisible(country)).getFirstSelectedOption().getText();
     }
 
     public String getStateValue() {
-        return waitForElement(state)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(state).getAttribute("value");
     }
 
     public String getCityValue() {
-        return waitForElement(city)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(city).getAttribute("value");
     }
 
     public String getZipcodeValue() {
-        return waitForElement(zipcode)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(zipcode).getAttribute("value");
     }
 
     public String getMobileNumberValue() {
-        return waitForElement(mobileNumber)
-                .getAttribute("value");
+        return waitUtils.waitForElementVisible(mobileNumber).getAttribute("value");
     }
-
 
     // =========================
     // Complete Account Information
@@ -377,13 +312,12 @@ public class AccountInformationPage extends CommonToAllPage {
         return this;
     }
 
-
     // =========================
     // Navigation
     // =========================
 
     public AccountCreatedPage navigateToAccountCreated() {
-        click(createAccountButton);
+        clickWithWait(createAccountButton);
         return new AccountCreatedPage(driver);
     }
 }

@@ -51,5 +51,22 @@ public class ContactUsPage extends CommonToAllPage {
         return getText(successMessage);
     }
 
+    public  void fillContactusForm(
+            String name,
+            String email,
+            String subject,
+            String message,
+            String filePath
+
+    ){
+        enterName(name);
+        enterEmail(email);
+        enterSubject(subject);
+        enterYourMessageHere(message);
+        clickChooseFile(filePath);
+        clickSubmit();
+
+
+    }
 
 }

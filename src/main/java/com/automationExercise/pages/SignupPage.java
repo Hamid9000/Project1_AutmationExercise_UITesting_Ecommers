@@ -43,9 +43,10 @@ public class SignupPage extends CommonToAllPage {
         enter(signupEmailField, email);
     }
 
-    public void clickSignupButton(){
+    public void clickSignupButton() {
         click(signupButton);
     }
+
     public AccountInformationPage signup(String name, String email) {
         enterSignupName(name);
         enterSignupEmail(email);
@@ -56,11 +57,11 @@ public class SignupPage extends CommonToAllPage {
 
     // Error validation
     public boolean isSignupErrorDisplayed() {
-        return waitForElement(signupErrorMessage).isDisplayed();
+        return isDisplayedWithWait(signupErrorMessage);
     }
 
     public String getActualSignupErrorMessage() {
-        return waitForElement(signupErrorMessage).getText();
+        return getTextWithWait(signupErrorMessage);
     }
 
     // Browser validation

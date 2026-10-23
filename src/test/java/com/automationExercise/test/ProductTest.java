@@ -62,7 +62,7 @@ public class ProductTest extends CommonToAllTest {
         logger.info("Searching for product: Blue Top");
         productsPage.searchProduct("Blue Top");
 
-        productsPage.waitFor(10);
+        productsPage.waitForFixTime(2000);
 
         logger.info("Verifying Searched Products section");
         Assert.assertTrue(

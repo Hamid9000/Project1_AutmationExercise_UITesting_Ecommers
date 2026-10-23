@@ -1322,3 +1322,43 @@
 2026-10-22 20:26:42 INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
 
+2026-10-22 20:30:49 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-22 20:31:54 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-22 20:34:18 INFO  com.automationExercise.test.ProductTest - Starting test: TC_PROD_005 - Verify brand
+2026-10-22 20:34:18 INFO  com.automationExercise.test.ProductTest - Opening Products page
+2026-10-22 20:34:22 INFO  com.automationExercise.test.ProductTest - Selecting brand: POLO
+2026-10-22 20:34:33 INFO  com.automationExercise.test.ProductTest - Starting test: TC_PROD_003 - Verify category
+2026-10-22 20:34:33 INFO  com.automationExercise.test.ProductTest - Opening Products page
+2026-10-22 20:34:40 INFO  com.automationExercise.test.ProductTest - Selecting category: Women
+2026-10-22 20:34:40 INFO  com.automationExercise.test.ProductTest - Verifying Women category
+2026-10-22 20:34:40 INFO  com.automationExercise.test.ProductTest - Test passed: TC_PROD_003
+2026-10-22 20:34:41 INFO  com.automationExercise.test.ProductTest - Starting test: TC_PROD_002 - Verify product search
+2026-10-22 20:34:41 INFO  com.automationExercise.test.ProductTest - Opening Products page
+2026-10-22 20:35:02 INFO  com.automationExercise.test.ProductTest - Searching for product: Blue Top
+2026-10-22 20:35:15 INFO  com.automationExercise.test.ProductTest - Verifying Searched Products section
+2026-10-22 20:35:15 INFO  com.automationExercise.test.ProductTest - Test passed: TC_PROD_002
+2026-10-22 20:35:16 INFO  com.automationExercise.test.ProductTest - Starting test: TC_PROD_001 - Verify Products page is displayed
+2026-10-22 20:35:16 INFO  com.automationExercise.test.ProductTest - Opening Products page
+2026-10-22 20:35:19 INFO  com.automationExercise.test.ProductTest - Verifying Products page is displayed
+2026-10-22 20:35:19 INFO  com.automationExercise.test.ProductTest - Verifying Products URL
+2026-10-22 20:35:19 INFO  com.automationExercise.test.ProductTest - Test passed: TC_PROD_001
+2026-10-22 20:35:20 INFO  com.automationExercise.test.ProductTest - Starting test: TC_PROD_004 - Verify sub-category
+2026-10-22 20:35:20 INFO  com.automationExercise.test.ProductTest - Opening Products page
+2026-10-22 20:35:24 INFO  com.automationExercise.test.ProductTest - Selecting category: Women
+2026-10-22 20:35:24 INFO  com.automationExercise.test.ProductTest - Selecting sub-category: Tops
+2026-10-23 18:23:40 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-23 18:26:35 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-23 18:37:18 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-23 20:11:42 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+

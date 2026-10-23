@@ -1,29 +1,27 @@
+
 package com.automationExercise.base;
 
 import com.automationExercise.config.ConfigLoader;
+import com.automationExercise.utils.WaitUtils;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
 
-import java.time.Duration;
 
 public class CommonToAllPage {
 
-    protected WebDriver driver;
+    protected final WebDriver driver;
+    protected final WaitUtils waitUtils;
 
-    // Constructor
     public CommonToAllPage(WebDriver driver) {
         this.driver = driver;
-
+        this.waitUtils = new WaitUtils(driver, 10);
     }
 
-    // =========================
-    // Base URL
-    // =========================
-
+    // Navigation
     protected void openBaseURL() {
         driver.get(ConfigLoader.get("base_url"));
     }
@@ -31,10 +29,6 @@ public class CommonToAllPage {
     protected void openPage(String pageUrl) {
         driver.get(ConfigLoader.get("base_url") + pageUrl);
     }
-
-    // =========================
-    // Navigation
-    // =========================
 
     protected void navigateBack() {
         driver.navigate().back();
@@ -48,6 +42,10 @@ public class CommonToAllPage {
         driver.navigate().refresh();
     }
 
+    // =========================
+    // title & current Url
+    // =========================
+
     protected String getCurrentUrl() {
         return driver.getCurrentUrl();
     }
@@ -55,114 +53,182 @@ public class CommonToAllPage {
     protected String getPageTitle() {
         return driver.getTitle();
     }
-    // =========================
-    // upload
-    // =========================
-
-    public void fileUpload(By locater, String filePath){
-        driver.findElement(locater).sendKeys(filePath);
-    }
-    // =========================
-    // alert
-    // =========================
-   public void acceptAlert(){
-        driver.switchTo().alert().accept();
-   }
-
-
-
 
     // =========================
-    // Explicit Wait
+    // Common UI Actions
     // =========================
 
-    protected WebElement waitForElement(By locator) {
-
-        return new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+    // Click without wait
+    protected void click(By locator) {
+        driver.findElement(locator).click();
     }
 
-    protected WebElement waitForClickable(By locator) {
-
-        return new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.elementToBeClickable(locator));
+    // Click with explicit wait
+    protected void clickWithWait(By locator) {
+        waitUtils.waitForElementClickable(locator).click();
     }
 
-    protected boolean waitForElementToDisappear(By locator) {
 
-        return new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.invisibilityOfElementLocated(locator));
-    }
-
-    public void waitFor(int seconds) {
-        try {
-            Thread.sleep(seconds * 1000L);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
-    }
-    // =========================
-    // Common Actions
-    // =========================
-
+    // Enter text without wait
     protected void enter(By locator, String value) {
-
-        WebElement element = waitForElement(locator);
-
+        WebElement element = driver.findElement(locator);
         element.clear();
         element.sendKeys(value);
     }
 
-    protected void click(By locator) {
-
-        waitForClickable(locator).click();
+    // Enter text with explicit wait
+    protected void enterWithWait(By locator, String value) {
+        WebElement element = waitUtils.waitForElementVisible(locator);
+        element.clear();
+        element.sendKeys(value);
     }
 
-    protected void scrollAndClick(By locator) {
-        WebElement element = waitForClickable(locator);
 
-        ((JavascriptExecutor) driver)
-                .executeScript(
-                        "arguments[0].scrollIntoView({block: 'center'});",
-                        element
-                );
+    // Get text without wait
+    protected String getText(By locator) {
+        return driver.findElement(locator).getText();
+    }
+
+    // Get text with explicit wait
+    protected String getTextWithWait(By locator) {
+        return waitUtils.waitForElementVisible(locator).getText();
+    }
+
+
+    // Scroll and click
+    protected void scrollAndClick(By locator) {
+        WebElement element = driver.findElement(locator);
+
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollIntoView({block: 'center'});",
+                element
+        );
 
         element.click();
     }
 
+    // Scroll and click with explicit wait
+    protected void scrollAndClickWithWait(By locator) {
+        WebElement element = waitUtils.waitForElementVisible(locator);
+
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollIntoView({block: 'center'});",
+                element
+        );
+
+        waitUtils.waitForElementClickable(locator).click();
+    }
+
+
+    // JavaScript click without explicit wait
     protected void jsClick(By locator) {
-        WebElement element = waitForElement(locator);
+        WebElement element = driver.findElement(locator);
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", element);
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].click();", element
+        );
     }
 
-    protected String getText(By locator) {
+    // JavaScript click with explicit wait
+    protected void jsClickWithWait(By locator) {
+        WebElement element = waitUtils.waitForElementVisible(locator);
 
-        return waitForElement(locator).getText();
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].click();", element
+        );
+    }
+
+
+    // =========================
+    // File Upload
+    // =========================
+
+    // Without explicit wait
+    protected void fileUpload(By locator, String filePath) {
+        driver.findElement(locator).sendKeys(filePath);
+    }
+
+    // With explicit wait
+    protected void fileUploadWithWait(By locator, String filePath) {
+        waitUtils.waitForElementVisible(locator).sendKeys(filePath);
     }
 
     // =========================
-    // Common Verification
+    // select
     // =========================
 
+    // By text value
+    protected void selectDropdownByText(By locator, String text) {
+        Select select = new Select(waitUtils.waitForElementVisible(locator));
+        select.selectByVisibleText(text);
+    }
+
+    protected void selectDropdownByValue(By locater, String value){
+        // without making variable can use
+        Select select = new Select(driver.findElement(locater));
+        select.selectByValue(value);
+    }
+
+    protected void selectDropdownByIndex(By locater, int index){
+        new Select(driver.findElement(locater)).selectByIndex(index);
+    }
+
+    protected String selectDropdownGetText(By locater){
+       return new Select(driver.findElement(locater)).getFirstSelectedOption().getText();
+    }
+
+    // =========================
+    // alert
+    // =========================
+
+    public void acceptAlert(){
+        driver.switchTo().alert().accept();
+    }
+
+
+    // =========================
+    // Verification
+    // =========================
+
+    // Displayed without explicit wait
     protected boolean isDisplayed(By locator) {
-
-        return waitForElement(locator).isDisplayed();
+        return driver.findElement(locator).isDisplayed();
     }
 
-    protected boolean isElementPresent(By locator) {
+    // Displayed with explicit wait
+    protected boolean isDisplayedWithWait(By locator) {
+        return waitUtils.waitForElementVisible(locator).isDisplayed();
+    }
 
+
+    // Presence without explicit wait
+    protected boolean isElementPresent(By locator) {
         return !driver.findElements(locator).isEmpty();
     }
 
-    protected boolean isUrlContains(String expectedValue) {
-
-        return getCurrentUrl().contains(expectedValue);
+    // Presence with explicit wait
+    protected boolean isElementPresentWithWait(By locator) {
+        return !waitUtils.waitForElementInvisible(locator);
     }
 
-    protected boolean isTitleContains(String expectedValue) {
 
-        return getPageTitle().contains(expectedValue);
+    // URL verification
+    protected boolean isUrlContains(String expectedValue) {
+        return driver.getCurrentUrl().contains(expectedValue);
+    }
+
+    // Title verification
+    protected boolean isTitleContains(String expectedValue) {
+        return driver.getTitle().contains(expectedValue);
+    }
+
+    //
+
+    protected boolean isTitleDisplay(){
+        return  !driver.getTitle().isBlank();
+    }
+    // wait
+    public void waitForFixTime(int time) {
+        waitUtils.waitForFixTime(time);
     }
 }
