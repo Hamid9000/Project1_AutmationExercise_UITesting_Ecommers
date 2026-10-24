@@ -112,22 +112,36 @@ public class SignupTest extends CommonToAllTest {
     // Test Data Cleanup
     // ============================================================
 
-    @Test (
-            description = "TC_SIGNUP_005: Verify that registered with exiting email and password show proper error",
+    @Test(
+            description = "TC_SIGNUP_005: Verify that registered with existing email shows proper error",
             groups = {"smoke"},
             priority = 5
     )
-    public void loginWithRegisteredEmail(){
-       String email =SignupTestData.name;
-       String name =SignupTestData.email;
-       String expectedSignupErrorMessage= SignupTestData.EXISTING_EMAIL_ERROR_MESSAGE;
+    public void loginWithRegisteredEmail() {
 
-       SignupPage signupPage = new SignupPage(DriverManager.getDriver());
-       signupPage.openSignupPage();
-       signupPage.enterSignupName(name);
-       signupPage.enterSignupEmail(email);
-       signupPage.clickSignupButton();
-       Assert.assertTrue(signupPage.isSignupErrorDisplayed(),"Signup error is not displayed");
-       Assert.assertEquals(signupPage.getActualSignupErrorMessage(),expectedSignupErrorMessage,"Actual and Expected error is not matched");
+        String name = SignupTestData.name;
+        String email = SignupTestData.email;
+
+        String expectedSignupErrorMessage =
+                SignupTestData.EXISTING_EMAIL_ERROR_MESSAGE;
+
+        SignupPage signupPage =
+                new SignupPage(DriverManager.getDriver());
+
+        signupPage.openSignupPage();
+        signupPage.enterSignupName(name);
+        signupPage.enterSignupEmail(email);
+        signupPage.clickSignupButton();
+
+        Assert.assertTrue(
+                signupPage.isSignupErrorDisplayed(),
+                "Signup error is not displayed"
+        );
+
+        Assert.assertEquals(
+                signupPage.getActualSignupErrorMessage(),
+                expectedSignupErrorMessage,
+                "Actual and Expected error is not matched"
+        );
     }
 }

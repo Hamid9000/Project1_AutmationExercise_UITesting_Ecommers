@@ -57,7 +57,7 @@ public class LoginPage extends CommonToAllPage {
 
     // Login Verification
     public String getLoginErrorMessage() {
-        return getText(loginErrorMessage);
+        return getTextWithWait(loginErrorMessage);
     }
 
     // logout validation

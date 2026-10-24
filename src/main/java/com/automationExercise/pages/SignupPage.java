@@ -21,8 +21,7 @@ public class SignupPage extends CommonToAllPage {
 
     // Error message
     private final By signupErrorMessage =
-            By.xpath("//p[contains(text(),'Email Address already exist!')]");
-
+            By.cssSelector(".signup-form p");
     // Constructor
     public SignupPage(WebDriver driver) {
         super(driver);

@@ -42,13 +42,16 @@ public class DriverManager {
             case "chrome":
 
                 ChromeOptions chromeOptions = new ChromeOptions();
+
                 chromeOptions.addArguments("--start-maximized");
                 chromeOptions.addArguments("--disable-notifications");
 
-                // CRX ki jagah unpacked extension load karo
-                chromeOptions.addArguments("--load-extension=A:\\adblockplus-chrome-4.48.0-mv3");
 
-                String disableAutofillPopups = ConfigLoader.get("disable.autofill.popups");
+                chromeOptions.addArguments(
+                        "--load-extension=A:\\adblockplus-chrome-4.48.0-mv3"
+                );
+                String disableAutofillPopups =
+                        ConfigLoader.get("disable.autofill.popups");
 
                 if (Boolean.parseBoolean(disableAutofillPopups)) {
                     chromeOptions.setExperimentalOption("prefs", java.util.Map.of(
@@ -63,9 +66,6 @@ public class DriverManager {
                     chromeOptions.addArguments("--headless=new");
                     chromeOptions.addArguments("--disable-gpu");
                     chromeOptions.addArguments("--window-size=1920,1080");
-
-                    // Headless mein extension usually kaam nahi karti
-                    // Isliye headless true hone pe extension skip karna better hai
                 }
 
                 webDriver = new ChromeDriver(chromeOptions);
