@@ -9,6 +9,7 @@ import com.automationExercise.pages.HomePage;
 import com.automationExercise.pages.LoginPage;
 
 import com.automationExercise.testdata.LoginPageTestData;
+import com.automationExercise.testdata.SignupTestData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -39,27 +40,16 @@ public class LoginTest extends CommonToAllTest {
     @Test(
             description = "TC_LOGIN_003: Verify login with invalid credentials",
             groups = {"smoke"},
-            dataProvider = "loginInvalidData",
-            dataProviderClass = LoginDataProvider.class,
+            dependsOnMethods = {"com.automationExercise.test.SignupTest.verifyValidSignup"},
             priority = 3
 
             // retryAnalyzer = RetryAnalyzer.class
     )
-    public void invalidLoginTest(
-            String testCaseID,
-            String testType,
-            String email,
-            String password,
-            String expectedErrorMessage) {
+    public void invalidLoginTest() {
 
-        System.out.println("====================================");
-        System.out.println("TestCaseID: " + testCaseID);
-        System.out.println("TestType: " + testType);
-        System.out.println("Test: Invalid Login");
-        System.out.println("Email: " + email);
-        System.out.println("Expected Error: " + expectedErrorMessage);
-        System.out.println("====================================");
-
+        String email = SignupTest.registeredEmail;
+        String password = SignupTest.registeredPassword;
+       String expectedErrorMessage = SignupTestData.EXISTING_EMAIL_ERROR_MESSAGE;
         LoginPage loginPage =
                 new LoginPage(DriverManager.getDriver());
 
@@ -72,14 +62,7 @@ public class LoginTest extends CommonToAllTest {
         Assert.assertEquals(
                 actualErrorMessage,
                 expectedErrorMessage,
-                "Error message mismatch for TestCaseID: "
-                        + testCaseID
-        );
-
-        System.out.println(
-                "PASS: " + testCaseID
-                        + " - Expected error message displayed"
-        );
+                "Error message mismatch ");
     }
 
     @Test(

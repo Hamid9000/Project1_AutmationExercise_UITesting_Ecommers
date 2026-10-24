@@ -2,6 +2,7 @@
 package com.automationExercise.pages;
 
 import com.automationExercise.base.CommonToAllPage;
+import com.automationExercise.utils.WaitUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -74,11 +75,11 @@ public class AccountInformationPage extends CommonToAllPage {
     // =========================
 
     public void selectMr() {
-        click(mrRadioButton);
+        waitUtils.waitForElementClickable(mrRadioButton).click();
     }
 
     public void selectMrs() {
-        click(mrsRadioButton);
+        waitUtils.waitForElementClickable(mrsRadioButton).click();
     }
 
     // =========================

@@ -9,6 +9,8 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+import java.io.File;
+
 public class DriverManager {
 
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
@@ -40,14 +42,13 @@ public class DriverManager {
             case "chrome":
 
                 ChromeOptions chromeOptions = new ChromeOptions();
-
-                // Existing configuration
                 chromeOptions.addArguments("--start-maximized");
-
-                // Disable browser notification permission popup
                 chromeOptions.addArguments("--disable-notifications");
-                String disableAutofillPopups =
-                        ConfigLoader.get("disable.autofill.popups");
+
+                // CRX ki jagah unpacked extension load karo
+                chromeOptions.addArguments("--load-extension=A:\\adblockplus-chrome-4.48.0-mv3");
+
+                String disableAutofillPopups = ConfigLoader.get("disable.autofill.popups");
 
                 if (Boolean.parseBoolean(disableAutofillPopups)) {
                     chromeOptions.setExperimentalOption("prefs", java.util.Map.of(
@@ -62,11 +63,13 @@ public class DriverManager {
                     chromeOptions.addArguments("--headless=new");
                     chromeOptions.addArguments("--disable-gpu");
                     chromeOptions.addArguments("--window-size=1920,1080");
+
+                    // Headless mein extension usually kaam nahi karti
+                    // Isliye headless true hone pe extension skip karna better hai
                 }
 
                 webDriver = new ChromeDriver(chromeOptions);
                 break;
-
             case "edge":
 
                 EdgeOptions edgeOptions = new EdgeOptions();
