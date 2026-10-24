@@ -4,6 +4,7 @@ package com.automationExercise.pages;
 import com.automationExercise.base.CommonToAllPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class AccountInformationPage extends CommonToAllPage {
@@ -36,7 +37,7 @@ public class AccountInformationPage extends CommonToAllPage {
     // =========================
 
     private final By newsletter = By.id("newsletter");
-    private final By specialOffers = By.id("option");
+    private final By specialOffers = By.id("optin");
 
     // =========================
     // Address Information
@@ -153,8 +154,7 @@ public class AccountInformationPage extends CommonToAllPage {
     }
 
     public void selectCountry(String value) {
-        Select select = new Select(waitUtils.waitForElementVisible(country));
-        select.selectByVisibleText(value);
+        selectDropdownByText(country, value);
     }
 
     public void enterState(String value) {
@@ -172,7 +172,24 @@ public class AccountInformationPage extends CommonToAllPage {
     public void enterMobileNumber(String value) {
         enter(mobileNumber, value);
     }
+    public void setNewsletter(boolean shouldSelect) {
+        boolean isSelected =
+                waitUtils.waitForElementVisible(newsletter).isSelected();
 
+        if (shouldSelect != isSelected) {
+            click(newsletter);
+        }
+    }
+
+
+    public void setSpecialOffers(boolean shouldSelect) {
+        boolean isSelected =
+                waitUtils.waitForElementVisible(specialOffers).isSelected();
+
+        if (shouldSelect != isSelected) {
+            click(specialOffers);
+        }
+    }
     // =========================
     // Field Value Verification
     // =========================
@@ -182,7 +199,7 @@ public class AccountInformationPage extends CommonToAllPage {
     }
 
     public String getEmailValue() {
-        return waitUtils.waitForElementVisible(email).getCssValue("value");
+        return waitUtils.waitForElementVisible(email).getAttribute("value");
     }
 
     public String getPasswordValue() {
@@ -274,12 +291,13 @@ public class AccountInformationPage extends CommonToAllPage {
             String mobile) {
 
         // Title
-        if (title.equalsIgnoreCase("Mr.")) {
+        if ("Mr.".equalsIgnoreCase(title)) {
             selectMr();
-        } else if (title.equalsIgnoreCase("Mrs.")) {
+        } else if ("Mrs.".equalsIgnoreCase(title)) {
             selectMrs();
+        } else {
+            throw new IllegalArgumentException("Invalid title: " + title);
         }
-
         // Account Information
         enterPassword(password);
 
@@ -289,13 +307,10 @@ public class AccountInformationPage extends CommonToAllPage {
         selectYear(dobYear);
 
         // Preferences
-        if (newsletter.equalsIgnoreCase("Yes")) {
-            selectNewsletter();
-        }
 
-        if (specialOffers.equalsIgnoreCase("Yes")) {
-            selectSpecialOffers();
-        }
+
+        setNewsletter("Yes".equalsIgnoreCase(newsletter));
+        setSpecialOffers("Yes".equalsIgnoreCase(specialOffers));
 
         // Address Information
         enterFirstName(firstName);
@@ -309,6 +324,7 @@ public class AccountInformationPage extends CommonToAllPage {
         enterZipcode(zipcode);
         enterMobileNumber(mobile);
 
+        waitUtils.waitForFixTime(1000);
         return this;
     }
 
@@ -316,7 +332,7 @@ public class AccountInformationPage extends CommonToAllPage {
     // Navigation
     // =========================
 
-    public AccountCreatedPage navigateToAccountCreated() {
+    public AccountCreatedPage clickOnCreateAccount() {
         clickWithWait(createAccountButton);
         return new AccountCreatedPage(driver);
     }

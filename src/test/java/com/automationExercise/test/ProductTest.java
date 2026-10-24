@@ -17,7 +17,8 @@ public class ProductTest extends CommonToAllTest {
     // TC_PROD_008 - Verify Product Details
     @Test(
             description = "TC_PROD_008: Verify product details are visible",
-            groups = {"smoke"}
+            groups = {"smoke"},
+            priority = 8
     )
     public void verifyProductsPage() {
 

@@ -1514,3 +1514,634 @@
 2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - Executing assertAll() to report any failed assertions
 2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - All assertions passed
 2026-10-24 00:10:33 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 PASSED ==========
+2026-10-24 10:28:11 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 10:33:34 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 10:36:05 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 10:37:34 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 10:37:34 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 10:37:34 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 10:37:34 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 10:37:38 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 10:37:38 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 10:38:02 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 10:38:02 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 10:38:02 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 10:38:02 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 10:38:02 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-24 10:38:03 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/products#google_vignette
+2026-10-24 10:38:03 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-24 10:38:03 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-24 10:38:07 INFO  com.automationExercise.test.ProductTest - Verifying product name visibility
+2026-10-24 10:38:07 INFO  com.automationExercise.test.ProductTest - Verifying category visibility
+2026-10-24 10:38:07 INFO  com.automationExercise.test.ProductTest - Verifying price visibility
+2026-10-24 10:38:07 INFO  com.automationExercise.test.ProductTest - Verifying availability visibility
+2026-10-24 10:38:07 INFO  com.automationExercise.test.ProductTest - Verifying condition visibility
+2026-10-24 10:38:07 INFO  com.automationExercise.test.ProductTest - Verifying brand visibility
+2026-10-24 10:38:07 INFO  com.automationExercise.test.ProductTest - Executing assertAll() to report any failed assertions
+2026-10-24 10:38:07 INFO  com.automationExercise.test.ProductTest - All assertions passed
+2026-10-24 10:38:07 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 PASSED ==========
+2026-10-24 10:41:43 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 10:44:22 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 10:48:28 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 10:54:20 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 10:55:00 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 10:56:32 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 10:58:42 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 10:58:45 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 10:58:45 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 10:58:45 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 10:58:45 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 10:58:45 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 10:58:45 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 10:58:52 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 10:58:52 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 10:59:10 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 10:59:11 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 10:59:11 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 10:59:11 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 10:59:11 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 10:59:11 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 10:59:11 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 10:59:23 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 10:59:23 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 10:59:36 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:11:18 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 11:11:21 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:11:21 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:11:21 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:11:21 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:11:21 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:11:21 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:11:29 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:11:29 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:11:47 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:11:48 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:11:48 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:11:48 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:11:48 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:11:48 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:11:48 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:11:52 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:14:37 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 11:14:40 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:14:40 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:14:40 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:14:40 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:14:40 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:14:40 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:14:50 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:14:50 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:14:52 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 11:14:52 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 11:14:57 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 11:14:57 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 11:15:03 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:16:17 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 11:16:20 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:16:20 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:16:20 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:16:20 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:16:20 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:16:20 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:16:27 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:16:27 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:16:30 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 11:16:30 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 11:16:37 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 11:16:37 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 11:16:48 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:22:09 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 11:22:11 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:22:11 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:22:11 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:22:11 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:22:11 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:22:11 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:22:20 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:22:20 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:22:23 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 11:22:23 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 11:22:33 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:22:34 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:22:34 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:22:34 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:22:34 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:22:34 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:22:34 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:22:42 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:22:42 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:22:45 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 11:22:45 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 11:22:45 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 11:22:55 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 11:22:58 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:24:17 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 11:24:19 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:24:19 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:24:19 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:24:19 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:24:19 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:24:19 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:24:37 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:24:37 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:24:40 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 11:24:40 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 11:24:40 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 11:24:45 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 11:24:49 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:26:35 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 11:26:37 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:26:37 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:26:37 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:26:37 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:26:37 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:26:38 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:26:46 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:26:46 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:26:49 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 11:26:49 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 11:26:49 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 11:26:53 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 11:26:57 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:42:23 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 11:42:28 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:42:28 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:42:28 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:42:28 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:42:28 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:42:28 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:42:54 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:42:54 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:43:00 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 11:43:00 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 11:43:00 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 11:43:02 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 11:43:06 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:44:58 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 11:45:02 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:45:02 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:45:02 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:45:02 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:45:02 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:45:02 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:45:06 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:45:06 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:45:12 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 11:45:12 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 11:45:15 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 11:45:15 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 11:45:18 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:46:50 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 11:46:54 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:46:54 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:46:54 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:46:54 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:46:54 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:46:54 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:47:19 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:47:19 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:47:23 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 11:47:23 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 11:47:23 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 11:47:26 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 11:47:32 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:47:49 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 11:48:25 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 11:48:25 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 11:48:25 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 11:48:25 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 11:48:28 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 11:48:29 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 11:48:31 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 11:48:32 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 11:48:32 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 11:48:32 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 11:48:34 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:48:34 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:48:34 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:48:34 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:48:34 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:48:34 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:48:39 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:48:39 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:48:43 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 11:48:43 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 11:48:43 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 11:48:47 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 11:48:55 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:51:58 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 11:51:58 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 11:51:58 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 11:51:58 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 11:52:02 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 11:52:02 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 11:52:06 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 11:52:06 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 11:52:07 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 11:52:07 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 11:52:08 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-24 11:52:09 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/products#google_vignette
+2026-10-24 11:52:09 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-24 11:52:09 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-24 11:52:21 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:52:21 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:52:21 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:52:21 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:52:21 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:52:21 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:52:26 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:52:26 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:52:29 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 11:52:30 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:52:30 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 11:52:30 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 11:52:30 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 11:52:30 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 11:52:30 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 11:52:44 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 11:52:44 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 11:52:46 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 12:00:07 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 12:00:11 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:00:11 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 12:00:11 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 12:00:11 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 12:00:11 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:00:11 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 12:00:37 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 12:00:37 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 12:00:42 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 12:00:42 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 12:00:43 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 12:00:49 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 12:00:51 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:00:51 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 12:00:51 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 12:00:51 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 12:00:51 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:00:51 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 12:00:57 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 12:00:57 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 12:01:01 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 12:01:01 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 12:01:26 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 12:01:26 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 12:01:27 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 12:06:19 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 12:07:11 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 12:07:11 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 12:07:11 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 12:07:11 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 12:08:49 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 12:10:07 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 12:10:07 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 12:10:07 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 12:10:07 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 12:10:48 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 12:14:24 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 12:16:45 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 12:17:19 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 12:17:19 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 12:17:19 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 12:17:19 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 12:17:22 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 12:17:23 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 12:17:26 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 12:17:26 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 12:17:26 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 12:17:26 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 12:17:26 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-24 12:17:27 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/products#google_vignette
+2026-10-24 12:17:27 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-24 12:17:27 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-24 12:17:38 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:17:38 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 12:17:38 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 12:17:38 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 12:17:38 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:17:38 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 12:18:06 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 12:18:06 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 12:18:10 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 12:18:10 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 12:18:34 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 12:18:34 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 12:18:38 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 12:20:09 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 12:20:41 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 12:20:41 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 12:20:41 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 12:20:41 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 12:20:44 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 12:20:44 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 12:20:44 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 12:20:50 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 12:20:50 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 12:20:50 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 12:20:52 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:20:52 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 12:20:52 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 12:20:52 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 12:20:52 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:20:52 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 12:20:56 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 12:20:56 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 12:21:00 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 12:21:00 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 12:21:00 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 12:21:06 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 12:21:07 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:21:07 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 12:21:07 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 12:21:07 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 12:21:07 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:21:07 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 12:21:11 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 12:21:11 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 12:21:15 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 12:25:16 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 12:25:16 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 12:25:16 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 12:25:16 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 12:25:20 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 12:25:20 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 12:25:20 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 12:25:31 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:25:31 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 12:25:31 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 12:25:31 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 12:25:31 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:25:31 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 12:25:36 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 12:25:36 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 12:25:39 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 12:25:39 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 12:25:43 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 12:25:44 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 12:25:50 INFO  com.automationExercise.test.SignupTest - Test data cleanup successful for: sarah.valid002@example.com
+2026-10-24 12:28:06 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 12:37:26 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 12:37:54 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 12:49:52 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 12:50:56 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:50:56 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 12:50:56 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 12:50:56 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 12:50:56 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:50:56 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 12:50:58 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 12:50:58 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 12:51:03 INFO  com.automationExercise.test.SignupTest - Account information filled successfully
+2026-10-24 12:51:03 INFO  com.automationExercise.test.SignupTest - Creating account
+2026-10-24 12:51:03 INFO  com.automationExercise.test.SignupTest - Verifying Account Created message
+2026-10-24 12:51:22 INFO  com.automationExercise.test.SignupTest - Test Case TC_SIGNUP_001 - {} --> PASSED
+2026-10-24 12:52:09 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 12:52:33 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 12:52:33 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 12:52:33 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 12:52:33 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 12:52:34 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 12:52:34 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 12:52:57 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 12:52:58 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 12:52:58 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 12:52:58 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 12:52:58 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-24 12:52:58 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/products#google_vignette
+2026-10-24 12:52:58 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-24 12:52:58 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-24 12:53:02 INFO  com.automationExercise.test.ProductTest - Verifying product name visibility
+2026-10-24 12:53:02 INFO  com.automationExercise.test.ProductTest - Verifying category visibility
+2026-10-24 12:53:02 INFO  com.automationExercise.test.ProductTest - Verifying price visibility
+2026-10-24 12:53:02 INFO  com.automationExercise.test.ProductTest - Verifying availability visibility
+2026-10-24 12:53:02 INFO  com.automationExercise.test.ProductTest - Verifying condition visibility
+2026-10-24 12:53:02 INFO  com.automationExercise.test.ProductTest - Verifying brand visibility
+2026-10-24 12:53:02 INFO  com.automationExercise.test.ProductTest - Executing assertAll() to report any failed assertions
+2026-10-24 12:53:02 INFO  com.automationExercise.test.ProductTest - All assertions passed
+2026-10-24 12:53:02 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 PASSED ==========
+2026-10-24 12:53:03 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:53:03 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 12:53:03 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 12:53:03 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 12:53:03 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:53:03 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 12:53:30 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 12:53:30 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 12:53:31 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:53:31 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 12:53:31 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 12:53:31 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 12:53:31 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 12:53:31 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 12:53:56 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 12:53:56 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 13:20:51 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 13:21:35 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 13:21:35 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 13:21:35 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 13:21:35 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 13:21:38 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 13:21:38 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 13:21:38 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 13:21:42 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 13:21:42 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 13:21:43 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 13:21:43 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/product_details/1
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - Verifying product name visibility
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - Verifying category visibility
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - Verifying price visibility
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - Verifying availability visibility
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - Verifying condition visibility
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - Verifying brand visibility
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - Executing assertAll() to report any failed assertions
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - All assertions passed
+2026-10-24 13:21:45 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 PASSED ==========
+2026-10-24 13:21:46 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:21:46 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 13:21:46 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 13:21:46 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 13:21:46 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:21:46 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 13:22:12 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 13:22:12 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 13:22:13 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:22:13 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 13:22:13 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 13:22:13 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 13:22:13 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:22:13 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 13:22:25 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 13:22:25 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 13:31:11 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 13:33:27 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 13:33:27 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 13:33:27 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 13:33:27 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 13:33:30 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 13:33:30 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 13:34:10 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 13:34:10 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 13:34:10 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 13:34:10 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 13:34:10 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-24 13:34:11 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/products#google_vignette
+2026-10-24 13:34:11 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-24 13:34:11 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-24 13:34:15 INFO  com.automationExercise.test.ProductTest - Verifying product name visibility
+2026-10-24 13:34:15 INFO  com.automationExercise.test.ProductTest - Verifying category visibility
+2026-10-24 13:34:16 INFO  com.automationExercise.test.ProductTest - Verifying price visibility
+2026-10-24 13:34:16 INFO  com.automationExercise.test.ProductTest - Verifying availability visibility
+2026-10-24 13:34:16 INFO  com.automationExercise.test.ProductTest - Verifying condition visibility
+2026-10-24 13:34:16 INFO  com.automationExercise.test.ProductTest - Verifying brand visibility
+2026-10-24 13:34:16 INFO  com.automationExercise.test.ProductTest - Executing assertAll() to report any failed assertions
+2026-10-24 13:34:16 INFO  com.automationExercise.test.ProductTest - All assertions passed
+2026-10-24 13:34:16 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 PASSED ==========
+2026-10-24 13:34:17 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:34:17 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 13:34:17 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 13:34:17 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 13:34:17 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:34:17 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 13:34:21 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 13:34:21 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 13:34:22 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:34:22 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 13:34:22 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 13:34:22 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 13:34:22 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:34:22 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 13:34:26 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 13:34:26 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 13:36:31 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2026-10-24 13:36:33 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:36:33 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 13:36:33 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 13:36:33 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 13:36:33 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:36:33 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 13:37:00 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 13:37:00 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 13:37:00 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:37:00 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 13:37:00 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 13:37:00 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 13:37:00 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:37:00 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 13:37:05 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 13:37:05 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 13:43:24 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers\src\test\resources\test-suites\smoke.xml
+
+2026-10-24 13:44:18 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 STARTED ==========
+2026-10-24 13:44:18 INFO  com.automationExercise.test.ProductTest - Expected product name: Blue Top
+2026-10-24 13:44:18 INFO  com.automationExercise.test.ProductTest - Product number: 1
+2026-10-24 13:44:18 INFO  com.automationExercise.test.ProductTest - Opening Home Page
+2026-10-24 13:44:20 INFO  com.automationExercise.test.ProductTest - Verifying Home Page is displayed
+2026-10-24 13:44:20 INFO  com.automationExercise.test.ProductTest - Navigating to Products Page
+2026-10-24 13:44:43 INFO  com.automationExercise.test.ProductTest - Opening All Products list
+2026-10-24 13:44:44 INFO  com.automationExercise.test.ProductTest - Verifying All Products title is displayed
+2026-10-24 13:44:44 INFO  com.automationExercise.test.ProductTest - Verifying product list is displayed
+2026-10-24 13:44:44 INFO  com.automationExercise.test.ProductTest - Clicking product number: 1
+2026-10-24 13:44:44 INFO  com.automationExercise.test.ProductTest - Clicking View Product for product number: 1
+2026-10-24 13:44:44 INFO  com.automationExercise.test.ProductTest - Current Product Details URL: https://automationexercise.com/products#google_vignette
+2026-10-24 13:44:44 INFO  com.automationExercise.test.ProductTest - Verifying navigation to Product Details page
+2026-10-24 13:44:44 INFO  com.automationExercise.test.ProductTest - Verifying product name. Expected: Blue Top
+2026-10-24 13:44:49 INFO  com.automationExercise.test.ProductTest - Verifying product name visibility
+2026-10-24 13:44:49 INFO  com.automationExercise.test.ProductTest - Verifying category visibility
+2026-10-24 13:44:49 INFO  com.automationExercise.test.ProductTest - Verifying price visibility
+2026-10-24 13:44:49 INFO  com.automationExercise.test.ProductTest - Verifying availability visibility
+2026-10-24 13:44:49 INFO  com.automationExercise.test.ProductTest - Verifying condition visibility
+2026-10-24 13:44:49 INFO  com.automationExercise.test.ProductTest - Verifying brand visibility
+2026-10-24 13:44:49 INFO  com.automationExercise.test.ProductTest - Executing assertAll() to report any failed assertions
+2026-10-24 13:44:49 INFO  com.automationExercise.test.ProductTest - All assertions passed
+2026-10-24 13:44:49 INFO  com.automationExercise.test.ProductTest - ========== TC_PROD_008 PASSED ==========
+2026-10-24 13:44:50 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:44:50 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 13:44:50 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 13:44:50 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 13:44:50 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:44:50 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 13:44:55 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 13:44:55 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 13:44:56 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:44:56 INFO  com.automationExercise.test.SignupTest - Test Case ID   : TC_SIGNUP_001
+2026-10-24 13:44:56 INFO  com.automationExercise.test.SignupTest - Test Type      : Positive
+2026-10-24 13:44:56 INFO  com.automationExercise.test.SignupTest - User Name      : Quinn Cochran
+2026-10-24 13:44:56 INFO  com.automationExercise.test.SignupTest - =================================================
+2026-10-24 13:44:56 INFO  com.automationExercise.test.SignupTest - Opening Signup page
+2026-10-24 13:45:20 INFO  com.automationExercise.test.SignupTest - Signup details submitted successfully
+2026-10-24 13:45:20 INFO  com.automationExercise.test.SignupTest - Filling account information for user: Quinn Cochran
+2026-10-24 13:45:46 INFO  com.automationExercise.base.CommonToAllTest - Test data cleanup successful

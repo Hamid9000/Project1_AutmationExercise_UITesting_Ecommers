@@ -46,6 +46,17 @@ public class DriverManager {
 
                 // Disable browser notification permission popup
                 chromeOptions.addArguments("--disable-notifications");
+                String disableAutofillPopups =
+                        ConfigLoader.get("disable.autofill.popups");
+
+                if (Boolean.parseBoolean(disableAutofillPopups)) {
+                    chromeOptions.setExperimentalOption("prefs", java.util.Map.of(
+                            "autofill.profile_enabled", false,
+                            "autofill.credit_card_enabled", false,
+                            "credentials_enable_service", false,
+                            "profile.password_manager_enabled", false
+                    ));
+                }
 
                 if ("true".equalsIgnoreCase(headless)) {
                     chromeOptions.addArguments("--headless=new");

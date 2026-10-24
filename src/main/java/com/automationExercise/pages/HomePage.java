@@ -102,11 +102,15 @@ public class HomePage extends CommonToAllPage {
     public String getLoggedInUserText() {
         return driver.findElement(loggedInAsLink).getText();
     }
+
     // Verification
     public boolean isHomePageDisplayed() {
         return driver.findElement(homeLink).isDisplayed();
     }
 
+    public boolean isLogoutButtonDisplayed(){
+        return isDisplayed(logoutLink);
+    }
     public boolean isLoggedInAsDisplayed() {
         return driver.findElement(loggedInAsLink).isDisplayed();
     }

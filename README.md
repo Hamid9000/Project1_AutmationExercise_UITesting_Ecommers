@@ -15,5 +15,11 @@ name Elijah Mcintyre
 #command for allure report
 allure serve target/allure-results
 
+for delet old file
+Remove-Item -Recurse -Force .\target\allure-results -ErrorAction SilentlyContinue
+
+sirf smoke suite run karne ke lia
+mvn clean test "-Dsurefire.suiteXmlFiles=src/test/resources/test-suites/testng-smoke.xml"
+
 Project Address
 C:\Users\hamid\IdeaProjects\Project1_AutmationExercise_UITesting_Ecommers 

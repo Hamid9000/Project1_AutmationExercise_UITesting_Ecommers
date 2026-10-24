@@ -8,6 +8,7 @@ import com.automationExercise.listeners.RetryAnalyzer;
 import com.automationExercise.pages.HomePage;
 import com.automationExercise.pages.LoginPage;
 
+import com.automationExercise.testdata.LoginPageTestData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,39 +17,22 @@ public class LoginTest extends CommonToAllTest {
     @Test(
             description = "TC_LOGIN_002: Verify login with valid credentials",
             groups = {"smoke"},
-            dataProvider = "loginValidData",
-            dataProviderClass = LoginDataProvider.class
+            dependsOnMethods = {"com.automationExercise.test.SignupTest.verifyValidSignup"},
+            priority = 2
             //retryAnalyzer = RetryAnalyzer.class
     )
-    public void validLoginTest(
-            String testCaseID,
-            String testType,
-            String email,
-            String password) {
+    public void validLoginTest(){
 
-        System.out.println("====================================");
-        System.out.println("TestCaseID: " + testCaseID);
-        System.out.println("TestType: " + testType);
-        System.out.println("Test: Valid Login");
-        System.out.println("Email: " + email);
-        System.out.println("====================================");
+        String email = SignupTest.registeredEmail;
+        String password = SignupTest.registeredPassword;
 
         LoginPage loginPage =
                 new LoginPage(DriverManager.getDriver());
 
         loginPage.openLoginPage();
-        loginPage.login(email, password);
+        HomePage homePage =loginPage.login(email, password);
+        Assert.assertTrue(homePage.isLogoutButtonDisplayed(), "Home logout Button Is not displayed");
 
-        Assert.assertFalse(
-                DriverManager.getDriver()
-                        .getCurrentUrl()
-                        .contains("login"),
-                "Login failed for TestCaseID: " + testCaseID
-        );
-
-        System.out.println(
-                "PASS: " + testCaseID + " - Valid login successful"
-        );
     }
 
 
@@ -56,7 +40,9 @@ public class LoginTest extends CommonToAllTest {
             description = "TC_LOGIN_003: Verify login with invalid credentials",
             groups = {"smoke"},
             dataProvider = "loginInvalidData",
-            dataProviderClass = LoginDataProvider.class
+            dataProviderClass = LoginDataProvider.class,
+            priority = 3
+
             // retryAnalyzer = RetryAnalyzer.class
     )
     public void invalidLoginTest(
@@ -98,15 +84,17 @@ public class LoginTest extends CommonToAllTest {
 
     @Test(
             description = "TC_LOGIN_004 :Verify that user can logout",
-            groups = {"smoke"}
+            groups = {"smoke"},
+            priority = 4
             //dataProvider = "",
             // dataProverderClass = sfsf.class,
             //retryAnalyzer = RetryAnalyzer.class
 
     )
-    public void registrationTest() throws InterruptedException {
-        String email = "vimuzebyku@mailinator.com";
-        String password = "Pa$$w0rd!";
+    public void registrationTest() {
+        String email = LoginPageTestData.email;
+        String password = LoginPageTestData.password;
+
         LoginPage loginPage = new LoginPage(DriverManager.getDriver());
         loginPage.openLoginPage();
         loginPage.enterLoginEmail(email);
@@ -117,7 +105,7 @@ public class LoginTest extends CommonToAllTest {
                 logout.isLoginPageDisplayed(),
                 "Login page is not displayed after logout"
         );
-        Thread.sleep(10000);
+
     }
 
 }

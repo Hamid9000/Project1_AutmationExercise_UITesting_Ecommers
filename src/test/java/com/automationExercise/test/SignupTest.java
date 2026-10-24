@@ -7,6 +7,7 @@ import com.automationExercise.listeners.RetryAnalyzer;
 import com.automationExercise.pages.AccountCreatedPage;
 import com.automationExercise.pages.AccountInformationPage;
 import com.automationExercise.pages.SignupPage;
+import com.automationExercise.testdata.SignupTestData;
 import com.automationExercise.utils.UserApi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +20,8 @@ import org.testng.annotations.Test;
 public class SignupTest extends CommonToAllTest {
 
     private static final Logger logger = LoggerFactory.getLogger(SignupTest.class);
-
+    public static String registeredEmail;
+    public static String registeredPassword;
     // ============================================================
     // Test Case Info
     // ============================================================
@@ -30,10 +32,11 @@ public class SignupTest extends CommonToAllTest {
     // ============================================================
 
     @Test(
-            dataProvider = "signupData",
+            dataProvider = "signupPositiveData",
             dataProviderClass = SignupDataProvider.class,
             description = "TC_SIGNUP_001: Verify that a new user can successfully create an account with valid details",
             groups = {"smoke"},
+            priority = 1,
             retryAnalyzer = RetryAnalyzer.class
     )
     public void verifyValidSignup(
@@ -58,7 +61,8 @@ public class SignupTest extends CommonToAllTest {
             String city,
             String zipcode,
             String mobile) {
-
+        registeredEmail = email;
+        registeredPassword = password;
         // Store email and password for cleanup
         ITestResult result = Reporter.getCurrentTestResult();
         result.setAttribute("email", email);
@@ -91,7 +95,7 @@ public class SignupTest extends CommonToAllTest {
         logger.info("Creating account");
 
         AccountCreatedPage accountCreatedPage =
-                accountInformationPage.navigateToAccountCreated();
+                accountInformationPage.clickOnCreateAccount();
 
         logger.info("Verifying Account Created message");
 
@@ -108,32 +112,15 @@ public class SignupTest extends CommonToAllTest {
     // Test Data Cleanup
     // ============================================================
 
-    @AfterMethod(alwaysRun = true)
-    public void cleanupTestData(ITestResult result) {
-
-        String email = (String) result.getAttribute("email");
-        String password = (String) result.getAttribute("password");
-
-        if (email != null && password != null) {
-
-            boolean deleted = UserApi.deleteUser(email, password);
-
-            if (deleted) {
-                logger.info("Test data cleanup successful for: {}", email);
-            } else {
-                logger.warn("Test data cleanup failed for: {}", email);
-            }
-        }
-    }
-
     @Test (
             description = "TC_SIGNUP_005: Verify that registered with exiting email and password show proper error",
-            groups = {"smoke"}
+            groups = {"smoke"},
+            priority = 5
     )
     public void loginWithRegisteredEmail(){
-       String email ="vimuzebyku@mailinator.com";
-       String name ="kuli no 420";
-       String expectedSignupErrorMessage="Email Address already exist!";
+       String email =SignupTestData.name;
+       String name =SignupTestData.email;
+       String expectedSignupErrorMessage= SignupTestData.EXISTING_EMAIL_ERROR_MESSAGE;
 
        SignupPage signupPage = new SignupPage(DriverManager.getDriver());
        signupPage.openSignupPage();

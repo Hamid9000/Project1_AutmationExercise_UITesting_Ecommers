@@ -12,6 +12,7 @@ public class HomeTest extends CommonToAllTest {
 
     @Test(
             description = "TC_HOME_006: Verify that Contact us form submitting successfully",
+            priority = 6,
             groups = {"smoke"}
     )
     public void ContactUsFormTest() {

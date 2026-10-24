@@ -5,6 +5,7 @@
 
     <listeners>
         <listener class-name="com.automationExercise.listeners.ScreenshotListener"/>
+
     </listeners>
 
     <test name="Smoke Tests">

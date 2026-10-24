@@ -9,7 +9,8 @@ import org.testng.annotations.Test;
 public class TestCaseTest extends CommonToAllTest {
     @Test(
             description = "TC_TC_007: Verify that test case page is dispalay",
-            groups = {"smoke"}
+            groups = {"smoke"},
+            priority = 7
     )
     public void verifyTestCaseDisplay(){
 
