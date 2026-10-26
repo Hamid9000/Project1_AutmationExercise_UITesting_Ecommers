@@ -1,4 +1,4 @@
-package com.automationExercise.test.practice;
+package com.automationExercise.test.practice.elements;
 
 import com.automationExercise.driver.DriverManager;
 import org.openqa.selenium.WebDriver;

@@ -1,12 +1,4 @@
-package com.automationExercise.test.practice;
-
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
-
-import java.io.FileInputStream;
-import java.io.IOException;
+package com.automationExercise.test.practice.elements;
 
 public class Practice2_Excelutils {
 //    private static final String SHEET_PATH = System.getProperty("user.dir") + "";
